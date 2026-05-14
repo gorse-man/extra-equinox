@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+<BaseLayout title="About | The Automation Specialist">
+    <Nav />
+    <main class="pt-40 pb-24 px-6 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <header class="mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest specialist-red">The Architect</span>
+                <h1 class="text-5xl font-bold mt-4 leading-tight">Lee Gorse: Engineering Revenue Certainty</h1>
+            </header>
+
+            <div class="prose prose-lg max-w-none space-y-12 text-gray-700 leading-relaxed">
+                <section>
+                    <p class="text-xl font-semibold architect-charcoal">
+                        The Automation Specialist Ltd is a solo strategic consultancy providing enterprise-grade architectural oversight for high-value B2B consultative markets.
+                    </p>
+                    <p class="mt-6">
+                        In an era of Martech fragmentation, I act as the bridge between high-level business objectives and complex technical ecosystems, working with Marketing and IT departments where technical silos cause operational risk or revenue leakage.
+                    </p>
+                </section>
+
+                <section class="bg-architect-charcoal text-white p-12">
+                    <h2 class="text-3xl font-bold italic mb-6">Strategic Evolution: The Pivot to High-Touch</h2>
+                    <p class="text-white/80">
+                        I have intentionally pivoted away from "hands-on-keys" platform configuration. My focus is on <strong>High-Touch Architecture</strong> and overall best practice.
+                    </p>
+                    <p class="mt-6 text-white/80">
+                        I provide the <strong>Success Blueprint</strong> and technical governance rather than manual builds, ensuring your technology investment is structurally sound and aligned with your GTM strategy.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-3xl font-bold architect-charcoal mb-8">Consulting Philosophy</h2>
+                    <div class="grid md:grid-cols-2 gap-10">
+                        <div>
+                            <h4 class="font-bold specialist-red uppercase text-sm mb-2">Process & Data First</h4>
+                            <p class="text-sm">I advise on the critical process and data layers that drive revenue, moving beyond simple platform configuration to true solution design.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold specialist-red uppercase text-sm mb-2">Architectural Integrity</h4>
+                            <p class="text-sm">To maintain the highest standards, I focus strictly on consultative sales motions, excluding creative services or high-volume B2C retail execution.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <div class="mt-20 border-t pt-12 flex flex-col md:flex-row gap-12 items-center justify-between">
+                <div>
+                    <h3 class="text-2xl font-bold italic mb-2 leading-tight">Ready for Architectural <br/>Oversight?</h3>
+                    <p class="text-gray-500">Contact Lee Gorse to schedule a discovery audit.</p>
+                </div>
+                <a href="/contact" class="btn-red px-10 py-4 text-white font-bold rounded-sm whitespace-nowrap">Contact Me</a>
+            </div>
+        </div>
+    </main>
+    <Footer />
+</BaseLayout>

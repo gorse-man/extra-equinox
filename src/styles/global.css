@@ -1,0 +1,4 @@
+@import "tailwindcss";
+
+/* This tells Tailwind v4 to scan your components */
+@source "../**/*.{astro,html,js,jsx,ts,tsx}";

@@ -1,0 +1,62 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+<BaseLayout title="Partnership Models | The Automation Specialist">
+    <Nav />
+    <main class="pt-40 pb-24 px-6 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <header class="mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest specialist-red">Engagement Frameworks</span>
+                <h1 class="text-5xl font-bold mt-4 leading-tight">Partnership Models</h1>
+                <p class="text-xl text-gray-500 mt-6 italic">Tailored architectural oversight for enterprises and agencies.</p>
+            </header>
+
+            <div class="grid gap-12">
+                <!-- Model 1: Direct Enterprise -->
+                <section class="p-10 bg-[#F4F7F6] border-l-4 border-specialist-red shadow-sm">
+                    <h2 class="text-3xl font-bold architect-charcoal mb-4">Direct Enterprise Engagement</h2>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        Designed for large global organisations seeking senior-level architectural governance. In this model, I act as your Lead Advisor, providing the bridge between business KPIs and your technical delivery teams.
+                    </p>
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-2 text-sm font-bold"><span class="specialist-red">✓</span> Technical Design Documents (TDDs)</li>
+                            <li class="flex items-center gap-2 text-sm font-bold"><span class="specialist-red">✓</span> ADRB Technical Boards Representation</li>
+                        </ul>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-2 text-sm font-bold"><span class="specialist-red">✓</span> Stack Rationalisation Audits</li>
+                            <li class="flex items-center gap-2 text-sm font-bold"><span class="specialist-red">✓</span> Multi-Market Governance</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Model 2: Agency Partnership -->
+                <section class="p-10 border-2 border-[#F4F7F6] hover:border-specialist-red transition-all">
+                    <h2 class="text-3xl font-bold architect-charcoal mb-4">Agency Sub-Contracting</h2>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        I partner with top-tier agencies to provide specialised architectural depth for their end-clients. I provide the "Solution Design" layer that allows your delivery teams to build with confidence.
+                    </p>
+                    <div class="bg-white p-6 border border-gray-100">
+                        <h4 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">End-Client Portfolio via Partnerships</h4>
+                        <div class="flex flex-wrap gap-4 text-sm font-bold architect-charcoal italic">
+                            <span>Vodafone</span> <span class="text-gray-200">|</span> 
+                            <span>Ericsson</span> <span class="text-gray-200">|</span> 
+                            <span>Royal Mail</span> <span class="text-gray-200">|</span> 
+                            <span>Regus</span> <span class="text-gray-200">|</span> 
+                            <span>JLL</span> <span class="text-gray-200">|</span> 
+                            <span>Wood Mackenzie</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="mt-20 text-center bg-architect-charcoal p-12 text-white">
+                <h3 class="text-2xl font-bold mb-6">Which model fits your current project?</h3>
+                <a href="/contact" class="btn-red px-10 py-4 text-white font-bold inline-block">Discuss an Engagement</a>
+            </div>
+        </div>
+    </main>
+    <Footer />
+</BaseLayout>

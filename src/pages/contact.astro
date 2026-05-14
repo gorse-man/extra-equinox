@@ -1,0 +1,108 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+<BaseLayout title="Contact Me | The Automation Specialist">
+    <Nav />
+    <main class="pt-40 pb-24 px-6 bg-[#F4F7F6]">
+        <div class="max-w-3xl mx-auto bg-white p-12 shadow-2xl border border-gray-100">
+            <h1 class="text-4xl font-bold mb-4">Let's Blueprint Your Success</h1>
+            <p class="text-gray-600 mb-10">Briefly describe your current Martech challenges and I will be in touch to schedule a technical discovery call.</p>
+            
+            <!-- 
+                PRODUCTION CONFIGURATION:
+                - method="POST" and data-netlify="true" triggers Netlify's form handler.
+                - action="/thank-you" ensures the user lands on your custom confirmation page.
+            -->
+            <form 
+                id="contactForm" 
+                name="contact" 
+                method="POST" 
+                data-netlify="true" 
+                action="/thank-you"
+                class="space-y-6"
+            >
+                <!-- Required for Netlify to identify the form name in Astro/SSG builds -->
+                <input type="hidden" name="form-name" value="contact" />
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="flex flex-col gap-2">
+                        <label class="text-xs font-bold uppercase tracking-wider text-gray-400">Title</label>
+                        <input type="text" name="Title" required placeholder="e.g. Mr / Dr / Head of" class="p-3 bg-gray-50 border border-gray-200 focus:border-specialist-red outline-none transition-colors" />
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label class="text-xs font-bold uppercase tracking-wider text-gray-400">First Name</label>
+                        <input type="text" name="First_Name" required class="p-3 bg-gray-50 border border-gray-200 focus:border-specialist-red outline-none transition-colors" />
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="flex flex-col gap-2">
+                        <label class="text-xs font-bold uppercase tracking-wider text-gray-400">Last Name</label>
+                        <input type="text" name="Last_Name" required class="p-3 bg-gray-50 border border-gray-200 focus:border-specialist-red outline-none transition-colors" />
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label class="text-xs font-bold uppercase tracking-wider text-gray-400">Email Address</label>
+                        <input type="email" id="email" name="Email" required placeholder="name@company.com" class="p-3 bg-gray-50 border border-gray-200 focus:border-specialist-red outline-none transition-colors" />
+                        <p id="emailError" class="text-[10px] text-specialist-red font-bold hidden uppercase tracking-widest mt-1">Please use a professional business email address.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label class="text-xs font-bold uppercase tracking-wider text-gray-400">Comments / Project Scope</label>
+                    <textarea name="Comments" required rows="5" class="p-3 bg-gray-50 border border-gray-200 focus:border-specialist-red outline-none transition-colors"></textarea>
+                </div>
+
+                <div class="flex items-start gap-3 py-4">
+                    <input type="checkbox" id="consent" required class="mt-1 accent-specialist-red" />
+                    <label for="consent" class="text-sm text-gray-600 leading-relaxed">
+                        I consent to The Automation Specialist Ltd storing my details for the purpose of contacting me regarding my inquiry. I understand I can unsubscribe or request data deletion at any time. See our <a href="/privacy" class="specialist-red underline font-bold">Privacy Policy</a>.
+                    </label>
+                </div>
+
+                <button type="submit" id="submitBtn" disabled class="btn-red w-full py-4 text-white font-bold text-lg rounded-sm shadow-xl shadow-red-500/20 disabled:opacity-30 disabled:cursor-not-allowed">
+                    Send
+                </button>
+            </form>
+        </div>
+    </main>
+    <Footer />
+
+    <script>
+        const form = document.getElementById('contactForm');
+        const emailInput = document.getElementById('email');
+        const consentCheckbox = document.getElementById('consent');
+        const submitBtn = document.getElementById('submitBtn');
+        const emailError = document.getElementById('emailError');
+
+        const personalDomains = [
+            'gmail.com', 'yahoo.com', 'hotmail.com', 'outlook.com', 
+            'live.com', 'icloud.com', 'me.com', 'aol.com', 'msn.com', 
+            'googlemail.com', 'btinternet.com', 'blueyonder.co.uk'
+        ];
+
+        function validateForm() {
+            const emailValue = emailInput.value.toLowerCase();
+            const domain = emailValue.split('@')[1];
+            
+            const isProfessional = emailValue === "" || !personalDomains.includes(domain);
+            const isConsented = consentCheckbox.checked;
+            const isFormValid = form.checkValidity();
+
+            if (emailValue !== "" && !isProfessional) {
+                emailError.classList.remove('hidden');
+                emailInput.classList.add('border-specialist-red');
+            } else {
+                emailError.classList.add('hidden');
+                emailInput.classList.remove('border-specialist-red');
+            }
+
+            // Submit button stays disabled until all validations pass
+            submitBtn.disabled = !(isProfessional && isConsented && isFormValid && emailValue.includes('@'));
+        }
+
+        form.addEventListener('input', validateForm);
+        consentCheckbox.addEventListener('change', validateForm);
+    </script>
+</BaseLayout>

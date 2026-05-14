@@ -1,0 +1,36 @@
+---
+import '../styles/global.css';
+const { title = "The Automation Specialist | Solution Architecture" } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <!-- Favicon link pointing to public/favicon.jpg -->
+    <link rel="icon" type="image/jpeg" href="/favicon.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Noto+Sans+Mono&display=swap" rel="stylesheet">
+    <style is:global>
+        body { font-family: 'Noto Sans', sans-serif; color: #1A1A1B; }
+        .blueprint-grid {
+            background-color: #F4F7F6;
+            background-image: radial-gradient(#1A1A1B 0.5px, transparent 0.5px);
+            background-size: 20px 20px;
+        }
+        .specialist-red { color: #E31B23; }
+        .bg-specialist-red { background-color: #E31B23; }
+        .governance-green { color: #004D40; }
+        .bg-governance-green { background-color: #004D40; }
+        .architect-charcoal { color: #1A1A1B; }
+        .bg-architect-charcoal { background-color: #1A1A1B; }
+        .btn-red { background-color: #E31B23; transition: transform 0.1s ease; }
+        .btn-red:active { transform: scale(0.98); }
+    </style>
+</head>
+<body class="bg-white">
+    <slot />
+</body>
+</html>

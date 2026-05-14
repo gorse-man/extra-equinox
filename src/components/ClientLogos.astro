@@ -1,0 +1,15 @@
+---
+const clients = [
+    "HSBC", "Ricoh", "BP Castrol", "Air Products", 
+    "Vodafone", "Ericsson", "Royal Mail", "JLL", "Wood Mackenzie"
+];
+---
+<div class="mt-20 pt-16 border-t border-gray-100">
+    <p class="text-xs font-bold uppercase tracking-[0.3em] text-gray-400 mb-10 text-center">Digital Marketing Experience With</p>
+    <div class="flex flex-wrap justify-center gap-x-12 gap-y-8 opacity-30 grayscale hover:opacity-60 hover:grayscale-0 transition-all duration-700 cursor-default">
+        {clients.map(client => (
+            <span class="text-xl font-bold architect-charcoal whitespace-nowrap">{client}</span>
+        ))}
+    </div>
+    <p class="mt-8 text-[10px] text-gray-400 uppercase tracking-widest text-center italic">Engagements delivered via direct contract and strategic agency partnerships.</p>
+</div>

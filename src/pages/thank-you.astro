@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import ClientLogos from '../components/ClientLogos.astro';
+---
+<BaseLayout title="Thank You | The Automation Specialist">
+    <Nav />
+    <main class="pt-40 pb-24 px-6 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="w-20 h-20 bg-specialist-red text-white flex items-center justify-center rounded-sm mx-auto mb-8 shadow-xl shadow-red-500/20">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            </div>
+            <h1 class="text-5xl font-bold mb-4">Request Received</h1>
+            <p class="text-xl text-gray-500 mb-12 italic">Your architectural inquiry is now being reviewed.</p>
+            
+            <div class="bg-[#F4F7F6] p-10 text-left border-l-4 border-specialist-red mb-12">
+                <h3 class="text-xl font-bold mb-4 uppercase tracking-wider">What Happens Next?</h3>
+                <ul class="space-y-4 text-gray-700">
+                    <li class="flex gap-3">
+                        <span class="font-bold specialist-red">01.</span>
+                        <span>I will personally review your project scope within the next 24 hours.</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="font-bold specialist-red">02.</span>
+                        <span>You will receive a direct email to schedule a 15-minute diagnostic discovery call.</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="font-bold specialist-red">03.</span>
+                        <span>In the meantime, feel free to review the "Project Spark" case study to see my framework in action.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+                <a href="/case-studies/spark-transformation" class="px-8 py-4 bg-architect-charcoal text-white font-bold rounded-sm hover:opacity-90 transition-opacity">Read Case Study</a>
+                <a href="/" class="px-8 py-4 border border-gray-200 font-bold rounded-sm hover:bg-gray-50 transition-colors">Return Home</a>
+            </div>
+
+            <!-- Client Portfolio Section Added for Social Proof -->
+            <ClientLogos />
+        </div>
+    </main>
+    <Footer />
+</BaseLayout>

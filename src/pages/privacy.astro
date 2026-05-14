@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+<BaseLayout title="Privacy Policy | The Automation Specialist">
+    <Nav />
+    <main class="pt-40 pb-24 px-6 bg-white">
+        <div class="max-w-3xl mx-auto prose prose-gray">
+            <h1 class="text-5xl font-bold mb-10">Privacy Policy</h1>
+            <p class="text-gray-400 font-bold uppercase tracking-widest mb-10 text-sm">Effective Date: May 13, 2026</p>
+            
+            <div class="space-y-12 text-gray-700 leading-relaxed">
+                <section>
+                    <h2 class="text-2xl font-bold text-black mb-4">1. Overview</h2>
+                    <p>The Automation Specialist Ltd is a UK-based consultancy. We are committed to protecting your privacy and ensuring that your personal data is handled in a safe and responsible manner.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-black mb-4">2. Data We Collect</h2>
+                    <p>When you use our contact form, we collect your title, name, email address, and any project details you provide. This information is used strictly to communicate with you regarding your inquiry.</p>
+                </section>
+
+                <section class="bg-[#F4F7F6] p-8 border-l-4 border-specialist-red italic">
+                    <h2 class="text-2xl font-bold text-black mb-4 not-italic">3. No Selling of Data</h2>
+                    <p>We do not, and will never, sell, rent, or trade your personal information with third parties. Your data is used exclusively for internal strategic consulting communications between you and Lee Gorse.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-black mb-4">4. Marketing & Consent</h2>
+                    <p>If you opt-in to marketing communications, you may receive periodic updates regarding Martech best practices or case studies. You may withdraw this consent at any time by clicking the "Unsubscribe" link in any email or by contacting us directly.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-black mb-4">5. Your Rights</h2>
+                    <p>Under UK GDPR, you have the right to request access to, correction of, or deletion of your personal data. To exercise these rights, please contact us via the <a href="/contact" class="specialist-red underline font-bold transition-opacity hover:opacity-70">main contact form</a>.</p>
+                </section>
+            </div>
+        </div>
+    </main>
+    <Footer />
+</BaseLayout>

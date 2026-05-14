@@ -1,0 +1,70 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+---
+<BaseLayout title="Project Spark Transformation | The Automation Specialist">
+    <Nav />
+    <article class="pt-40 pb-24 px-6 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <header class="mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest specialist-red">Case Study: Project Spark</span>
+                <h1 class="text-5xl font-bold mt-4 leading-tight">Global Marketing Automation Transformation</h1>
+                <p class="text-xl text-gray-500 mt-6 italic">Tier-1 Global Telecommunications & Digital Services | FY24 – FY25</p>
+            </header>
+
+            <div class="prose prose-lg max-w-none space-y-12">
+                <section>
+                    <h2 class="text-3xl font-bold architect-charcoal flex items-center gap-4">
+                        <span class="w-8 h-1 bg-specialist-red"></span> Executive Summary
+                    </h2>
+                    <p class="mt-6 text-gray-700 leading-relaxed">
+                        This project involved the architectural overhaul of a legacy, shared Marketing Automation Platform (MAP) environment (Oracle Eloqua) primarily serving the organisation's largest business units: United Kingdom, Ireland, and the International business segment. </p> <p class="mt-6 text-gray-700 leading-relaxed"> The objective was to transition from a cluttered, monolithic system to a dedicated Multi-Org architecture designed to support a 9% revenue growth target in the Small to Medium Enterprise (SME) and Multi-National Corporation (MNC) segments. The transformation focused on enabling high-velocity growth through technical standardisation and local operational autonomy, while clarifying the boundaries between high-end B2B automation and the high-volume decisioning tools used for consumer and micro-segments.</p>
+                </section>
+
+                <section class="bg-[#F4F7F6] p-10 border-l-4 border-specialist-red">
+                    <h2 class="text-2xl font-bold mb-4">Problem Statement (Diagnostic)</h2>
+                    <ul class="space-y-4 text-gray-700">
+                        <li><strong>Monolithic Inefficiency:</strong> A single shared instance served the primary B2B markets, leading to partitioned data silos and complex routing logic that delayed lead distribution to sales teams.</li>
+                        <li><strong>Stack Fragmentation:</strong> While the largest markets shared an Eloqua instance, other regions operated in technical isolation. The Small Office/Home Office (SoHO) and Business-to-Consumer (B2C) segments utilised a separate decisioning engine (Pega) with basic activation layers, creating a disconnected customer experience.</li>
+                        <li><strong>Integration Complexity:</strong> Point-to-point integrations were becoming unmanageable, necessitating an API-first "Digital Experience Layer" (DXL) to bridge the gap between global marketing tools and local CRM environments.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-3xl font-bold architect-charcoal flex items-center gap-4 mb-8">
+                        <span class="w-8 h-1 bg-specialist-red"></span> Solution Framework
+                    </h2>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="p-6 border border-gray-100">
+                            <h4 class="font-bold specialist-red uppercase text-sm mb-2">Process Layer</h4>
+                            <p class="text-gray-600 text-sm">Defined standardised B2B funnels and clear lead handling boundaries between high-value B2B and SoHO segments.</p>
+                        </div>
+                        <div class="p-6 border border-gray-100">
+                            <h4 class="font-bold specialist-red uppercase text-sm mb-2">Application Layer</h4>
+                            <p class="text-gray-600 text-sm">Architected Multi-Org deployment to allow local autonomy and bespoke CRM mapping for UK/Ireland.</p>
+                        </div>
+                        <div class="p-6 border border-gray-100">
+                            <h4 class="font-bold specialist-red uppercase text-sm mb-2">Data Layer</h4>
+                            <p class="text-gray-600 text-sm">Reduced technical debt by standardising schema to core B2B attributes and integrating localized preference centers.</p>
+                        </div>
+                        <div class="p-6 border border-gray-100">
+                            <h4 class="font-bold specialist-red uppercase text-sm mb-2">Integration Layer</h4>
+                            <p class="text-gray-600 text-sm">Phased strategy moving from native CRM integrations to custom DXL connectors for legacy Siebel/Amdocs environments.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="border-t pt-12 text-center">
+                    <h2 class="text-3xl font-bold mb-6 italic">Results & Business Impact</h2>
+                    <p class="text-5xl font-bold specialist-red mb-4 leading-none">Near Real-Time</p>
+                    <p class="text-gray-500 uppercase tracking-widest font-bold text-sm">Lead Processing Improvement</p>
+                    <p class="mt-8 text-gray-600 max-w-2xl mx-auto">
+                        Enabled operational independence for primary business units and provided the technical foundation to scale product penetration, supporting a multi-billion pound incremental revenue ambition.
+                    </p>
+                </section>
+            </div>
+        </div>
+    </article>
+    <Footer />
+</BaseLayout>

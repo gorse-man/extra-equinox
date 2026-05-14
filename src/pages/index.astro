@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Hero from '../components/Hero.astro';
+import TechStack from '../components/TechStack.astro'; // Add this line
+import TheFork from '../components/TheFork.astro';
+import FourLayerModel from '../components/FourLayerModel.astro';
+import TechSnippet from '../components/TechSnippet.astro';
+import Footer from '../components/Footer.astro';
+---
+<BaseLayout>
+    <Nav />
+    <main>
+        <Hero />
+        <TechStack /> <!-- Add this line here -->
+        <TheFork />
+        <FourLayerModel />
+        <TechSnippet />
+    </main>
+    <Footer />
+</BaseLayout>

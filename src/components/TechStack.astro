@@ -1,0 +1,18 @@
+---
+const tech = [
+    "Eloqua", "Pardot", "SFMC", "6Sense", 
+    "Tealium", "RevUp", "BigQuery", "ETL/Reverse-ETL"
+];
+---
+<section class="py-20 bg-white border-y border-gray-100">
+    <div class="max-w-7xl mx-auto px-6">
+        <h4 class="text-center text-xs font-bold uppercase tracking-[0.3em] text-gray-400 mb-10">Expertise & Ecosystem</h4>
+        <div class="flex flex-wrap justify-center gap-4 md:gap-8">
+            {tech.map((item) => (
+                <div class="px-6 py-3 bg-[#F4F7F6] border border-gray-200 rounded-sm font-bold text-sm architect-charcoal hover:border-specialist-red transition-colors cursor-default">
+                    {item}
+                </div>
+            ))}
+        </div>
+    </div>
+</section>

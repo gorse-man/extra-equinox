@@ -1,0 +1,56 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+
+const services = [
+    {
+        title: "High-Touch Architecture",
+        desc: "Moving beyond 'hands-on-keys' to provide the Success Blueprints and technical governance your enterprise ecosystems require."
+    },
+    {
+        title: "Lead Management Lifecycles",
+        desc: "Designing end-to-end lifecycles that track intent from initial touch to final revenue recognition."
+    },
+    {
+        title: "Marketing & Sales Alignment",
+        desc: "Harmonising cross-functional operations through unified SLAs and integrated technical frameworks."
+    },
+    {
+        title: "Lead Scoring & Routing",
+        desc: "Architecting demographic and behavioural matrices to ensure high-value sales focus."
+    },
+    {
+        title: "ROI & Closed-Loop Attribution",
+        desc: "Designing the data structures required to prove marketing impact with mathematical certainty."
+    },
+    {
+        title: "Operations Strategy",
+        desc: "Advising on the most efficient Marketing Operations operating models for solo or scaled teams."
+    }
+];
+---
+<BaseLayout title="Services | The Automation Specialist">
+    <Nav />
+    <main class="pt-40 pb-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-5xl font-bold mb-4">Strategic Specialisms</h1>
+            <p class="text-xl text-gray-500 max-w-2xl mb-16 italic">Focusing on the Process and Data layers that turn technology into revenue.</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {services.map(s => (
+                    <div class="p-10 bg-[#F4F7F6] border border-gray-100 hover:border-specialist-red transition-all group">
+                        <h3 class="text-2xl font-bold mb-4">{s.title}</h3>
+                        <p class="text-gray-600 leading-relaxed">{s.desc}</p>
+                    </div>
+                ))}
+            </div>
+
+            <div class="mt-20 p-12 bg-architect-charcoal text-white text-center">
+                <h2 class="text-3xl font-bold mb-6 italic">Ready to rationalise your stack?</h2>
+                <a href="/contact" class="btn-red px-10 py-4 text-white font-bold inline-block">Request Service Audit</a>
+            </div>
+        </div>
+    </main>
+    <Footer />
+</BaseLayout>
