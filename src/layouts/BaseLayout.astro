@@ -1,18 +1,52 @@
 ---
 import '../styles/global.css';
-const { title = "The Automation Specialist | Solution Architecture" } = Astro.props;
+
+interface Props {
+    title?: string;
+    description?: string;
+    ogImage?: string;
+    canonicalURL?: string;
+}
+
+const { 
+    title = "The Automation Specialist | Marketing Solution Architect",
+    description = "Enterprise-grade Martech Solution Architect & Strategic Consultant. Specialising in Eloqua, Marketo, Pardot, 6Sense, and closed-loop revenue attribution.",
+    ogImage = "/tams_logo.jpg",
+    canonicalURL = Astro.url.href
+} = Astro.props;
 ---
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary SEO Metadata -->
     <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
     <link rel="icon" type="image/jpeg" href="/favicon.jpg" />
+
+    <!-- Open Graph / Facebook / LinkedIn Social Cards -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url.href} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL(ogImage, Astro.site || 'https://theautomationspecialist.co.uk')} />
+
+    <!-- Twitter Cards -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={Astro.url.href} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={new URL(ogImage, Astro.site || 'https://theautomationspecialist.co.uk')} />
+
+    <!-- Fonts Connection -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Noto+Sans+Mono&display=swap" rel="stylesheet">
     
+    <!-- GOOGLE TAG (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SET2QQKXS4" is:inline></script>
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
@@ -22,6 +56,7 @@ const { title = "The Automation Specialist | Solution Architecture" } = Astro.pr
       gtag('config', 'G-SET2QQKXS4');
     </script>
 
+    <!-- LINKEDIN INSIGHT TAG -->
     <script type="text/javascript" is:inline>
         _linkedin_partner_id = "YOUR_LINKEDIN_ID";
         window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
@@ -40,7 +75,6 @@ const { title = "The Automation Specialist | Solution Architecture" } = Astro.pr
     </script>
 
     <style is:global>
-        /* Your existing styles here... */
         body { font-family: 'Noto Sans', sans-serif; color: #1A1A1B; }
         .blueprint-grid {
             background-color: #F4F7F6;
