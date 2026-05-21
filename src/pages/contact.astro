@@ -3,7 +3,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
 ---
-<BaseLayout title="Contact Me | The Automation Specialist">
+<BaseLayout 
+    title="Contact Me | Request an Architectural Audit"
+    description="Ready to secure your marketing operations strategy? Contact me to arrange a technical discovery audit and eliminate system bottlenecks."
+>
     <Nav />
     <main class="pt-40 pb-24 px-6 bg-[#F4F7F6]">
         <div class="max-w-3xl mx-auto bg-white p-12 shadow-2xl border border-gray-100">
@@ -16,16 +19,17 @@ import Footer from '../components/Footer.astro';
                 - action="/thank-you" ensures the user lands on your custom confirmation page.
             -->
             <form 
-    id="contactForm" 
-    name="contact" 
-    method="POST" 
-    data-netlify="true" 
-    action="/thank-you" 
-    class="space-y-6"
->
-    <input type="hidden" name="form-name" value="contact" />
+                id="contactForm" 
+                name="contact" 
+                method="POST" 
+                data-netlify="true" 
+                action="/thank-you"
+                class="space-y-6"
+            >
+                <!-- Required for Netlify to identify the form name in Astro/SSG builds -->
+                <input type="hidden" name="form-name" value="contact" />
 
-    <div class="grid md:grid-cols-2 gap-6">
+                <div class="grid md:grid-cols-2 gap-6">
                     <div class="flex flex-col gap-2">
                         <label class="text-xs font-bold uppercase tracking-wider text-gray-400">Title</label>
                         <input type="text" name="Title" required placeholder="e.g. Mr / Dr / Head of" class="p-3 bg-gray-50 border border-gray-200 focus:border-specialist-red outline-none transition-colors" />

@@ -58,6 +58,7 @@ const {
 
     <!-- LINKEDIN INSIGHT TAG -->
     <script type="text/javascript" is:inline>
+        // REPLACE "YOUR_LINKEDIN_ID" with your actual LinkedIn Partner ID
         _linkedin_partner_id = "YOUR_LINKEDIN_ID";
         window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
         window._linkedin_data_partner_ids.push(_linkedin_partner_id);
@@ -73,6 +74,10 @@ const {
         b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
         s.parentNode.insertBefore(b, s);})(window.lintrk);
     </script>
+    <noscript>
+        <!-- Fallback image for non-JS tracking. Replace YOUR_LINKEDIN_ID with your actual Partner ID -->
+        <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=YOUR_LINKEDIN_ID&fmt=gif" />
+    </noscript>
 
     <style is:global>
         body { font-family: 'Noto Sans', sans-serif; color: #1A1A1B; }
