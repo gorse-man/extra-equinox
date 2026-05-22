@@ -21,82 +21,41 @@ const {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!-- Primary SEO Metadata -->
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalURL} />
     <link rel="icon" type="image/jpeg" href="/favicon.jpg" />
 
-    <!-- Open Graph / Facebook / LinkedIn Social Cards -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content={Astro.url.href} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={new URL(ogImage, Astro.site || 'https://theautomationspecialist.co.uk')} />
 
-    <!-- Twitter Cards -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content={Astro.url.href} />
-    <meta property="twitter:title" content={title} />
-    <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content={new URL(ogImage, Astro.site || 'https://theautomationspecialist.co.uk')} />
-
-    <!-- Fonts Connection -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Noto+Sans+Mono&display=swap" rel="stylesheet">
     
-    <!-- GOOGLE TAG (gtag.js) -->
+    <script is:inline>
+    !function(e){"use strict";var t=e&&e.namespace;if(t&&e.profileId&&e.cdn){var i=window[t];if(i&&Array.isArray(i)||(i=window[t]=[]),!i.initialized&&!i._loaded)if(i._loaded)console&&console.warn("[Radar] Duplicate initialization attempted");else{i._loaded=!0;["track","page","identify","group","alias","ready","debug","on","off","once","trackClick","trackSubmit","trackLink","trackForm","pageview","screen","reset","register","setAnonymousId","addSourceMiddleware","addIntegrationMiddleware","addDestinationMiddleware","giveCookieConsent"].forEach((function(e){var a;i[e]=(a=e,function(){var e=window[t];if(e.initialized)return e[a].apply(e,arguments);var i=[].slice.call(arguments);return i.unshift(a),e.push(i),e})})),-1===e.apiEndpoint.indexOf("http")&&(e.apiEndpoint="https://"+e.apiEndpoint),i.bootstrap=function(){var t,i=document.createElement("script");i.async=!0,i.type="text/javascript",i.id="__radar__",i.setAttribute("data-settings",JSON.stringify(e)),i.src=[-1!==(t=e.cdn).indexOf("http")?"":"https://",t,"/releases/latest/radar.min.js"].join("");var a=document.scripts[0];a.parentNode.insertBefore(i,a)},i.bootstrap()}}else"undefined"!=typeof console&&console.error("[Radar] Configuration incomplete")}({
+      "apiEndpoint": "radar.snitcher.com",
+      "cdn": "cdn.snitcher.com",
+      "namespace": "Snitcher",
+      "profileId": "sCpARcrcQT"
+    });
+    </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SET2QQKXS4" is:inline></script>
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-SET2QQKXS4');
     </script>
 
-    <!-- LINKEDIN INSIGHT TAG -->
     <script type="text/javascript" is:inline>
-        // REPLACE "YOUR_LINKEDIN_ID" with your actual LinkedIn Partner ID
+        // Ensure you replace "YOUR_LINKEDIN_ID" with your actual Partner ID from Campaign Manager
         _linkedin_partner_id = "YOUR_LINKEDIN_ID";
         window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
         window._linkedin_data_partner_ids.push(_linkedin_partner_id);
     </script>
-    <script type="text/javascript" is:inline>
-        (function(l) {
-        if (!l){window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
-        window._linkedin_data_partner_ids.push(_linkedin_partner_id);
-        return;}
-        var s = document.getElementsByTagName("script")[0];
-        var b = document.createElement("script");
-        b.type = "text/javascript";b.async = true;
-        b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
-        s.parentNode.insertBefore(b, s);})(window.lintrk);
-    </script>
-    <noscript>
-        <!-- Fallback image for non-JS tracking. Replace YOUR_LINKEDIN_ID with your actual Partner ID -->
-        <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=YOUR_LINKEDIN_ID&fmt=gif" />
-    </noscript>
-
-    <style is:global>
-        body { font-family: 'Noto Sans', sans-serif; color: #1A1A1B; }
-        .blueprint-grid {
-            background-color: #F4F7F6;
-            background-image: radial-gradient(#1A1A1B 0.5px, transparent 0.5px);
-            background-size: 20px 20px;
-        }
-        .specialist-red { color: #E31B23; }
-        .bg-specialist-red { background-color: #E31B23; }
-        .governance-green { color: #004D40; }
-        .bg-governance-green { background-color: #004D40; }
-        .architect-charcoal { color: #1A1A1B; }
-        .bg-architect-charcoal { background-color: #1A1A1B; }
-        .btn-red { background-color: #E31B23; transition: transform 0.1s ease; }
-        .btn-red:active { transform: scale(0.98); }
-    </style>
-</head>
-<body class="bg-white">
-    <slot />
-</body>
-</html>
+    <script type="text/javascript" is
