@@ -14,79 +14,82 @@ const metadata = {
 <BaseLayout title={metadata.title} description={metadata.description} keywords={metadata.keywords}>
   <Nav />
 
-  <main class="bg-neutral-950 text-neutral-100 min-h-screen pt-24 pb-16">
-    <!-- Header Section -->
-    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-8 border-b border-neutral-800">
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6">
-        Architectural <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300">Case Studies</span>
-      </h1>
-      <p class="text-lg text-neutral-300 max-w-3xl leading-relaxed font-light">
-        Proof of high-touch technology governance, strategic design blueprints, and clean integration loops designed for enterprise marketing environments. I don't configure platforms; I design the ecosystems that accelerate pipeline.
-      </p>
+  <main class="bg-white text-[#1A1A1B] min-h-screen pt-20">
+    <!-- Header Section (Blueprint Grid Background) -->
+    <section class="blueprint-grid py-20 border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-6">
+        <span class="text-xs font-bold uppercase tracking-[0.3em] text-[#E31B23] block mb-3 font-mono">[ ARCHITECTURAL PROOF ]</span>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#1A1A1B] mb-6 leading-tight">
+          System-Level <span class="italic text-[#004D40]">Case Studies</span>
+        </h1>
+        <p class="text-lg sm:text-xl text-gray-600 max-w-3xl leading-[1.6] font-light">
+          Concrete evidence of high-touch technology governance, strategic design blueprints, and clean integration loops designed for complex enterprise marketing environments. I do not configure platforms; I design the ecosystems that accelerate pipeline.
+        </p>
+      </div>
     </section>
 
     <!-- Case Studies Grid -->
-    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+    <section class="max-w-7xl mx-auto px-6 py-20">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
 
-        <!-- Case Study 1: VMO2 (New) -->
-        <article class="bg-neutral-900 border border-neutral-800 rounded-3xl overflow-hidden shadow-2xl flex flex-col group hover:border-emerald-500/40 transition-all duration-300">
-          <div class="p-8 flex-grow">
-            <div class="flex items-center justify-between gap-4 mb-4">
-              <span class="px-3 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-semibold rounded-full border border-emerald-500/20">
-                Enterprise ABM Loop
+        <!-- Case Study 1: VMO2 -->
+        <article class="bg-[#F4F7F6] border-2 border-gray-200/60 rounded-sm p-8 flex flex-col justify-between hover:border-[#E31B23] transition-all duration-300 shadow-sm relative group">
+          <div>
+            <div class="flex items-center justify-between gap-4 mb-6">
+              <span class="px-3 py-1 bg-[#004D40]/5 text-[#004D40] text-xs font-bold uppercase tracking-wider rounded-sm border border-[#004D40]/10">
+                Enterprise ABM Integration
               </span>
-              <span class="text-xs font-mono text-neutral-500">June 2026</span>
+              <span class="text-xs font-mono text-gray-400">June 2026</span>
             </div>
             
-            <h2 class="text-2xl font-bold text-white group-hover:text-emerald-400 transition-colors duration-300 mb-3">
+            <h2 class="text-2xl lg:text-3xl font-bold text-[#1A1A1B] group-hover:text-[#E31B23] transition-colors duration-300 mb-4 leading-tight">
               VMO2: Architecting the Enterprise Revenue Engine
             </h2>
             
-            <p class="text-neutral-400 text-sm font-light leading-relaxed mb-6">
-              How I unified Oracle Eloqua, D&B RevUp, and Salesforce CRM to deliver real-time Account-Level Recommendation alerts to enterprise sales owners, dropping data latency from 7 days down to under 15 minutes.
+            <p class="text-gray-600 text-sm leading-[1.6] font-light mb-8">
+              How I unified Oracle Eloqua, D&B RevUp, and Salesforce CRM to deliver real-time Account-Level Recommendation alerts directly to enterprise sales dashboards, dropping latency from 7 days to under 15 minutes.
             </p>
 
-            <div class="grid grid-cols-2 gap-4 border-t border-neutral-800/80 pt-4 mb-2">
+            <div class="grid grid-cols-2 gap-4 border-t border-gray-200/80 pt-6 mb-8">
               <div>
-                <span class="block text-neutral-500 text-xs uppercase font-semibold">Integrations</span>
-                <span class="text-white text-xs font-mono font-medium">Eloqua + RevUp + CRM</span>
+                <span class="block text-gray-400 text-[10px] uppercase tracking-wider mb-1 font-mono">Integrations</span>
+                <span class="text-[#1A1A1B] text-sm font-bold">Eloqua + RevUp + Salesforce</span>
               </div>
               <div>
-                <span class="block text-neutral-500 text-xs uppercase font-semibold">Primary Focus</span>
-                <span class="text-white text-xs font-mono font-medium">Zero-Latency Signal Loops</span>
+                <span class="block text-gray-400 text-[10px] uppercase tracking-wider mb-1 font-mono">Primary Focus</span>
+                <span class="text-[#1A1A1B] text-sm font-bold">Zero-Latency Intent Loop</span>
               </div>
             </div>
           </div>
           
-          <div class="px-8 pb-8 pt-2">
-            <a href="/case-studies/vmo2-revenue-engine" class="inline-flex items-center justify-center w-full sm:w-auto px-5 py-2.5 bg-neutral-800 hover:bg-emerald-500 text-white hover:text-neutral-950 text-sm font-bold rounded-lg transition-all duration-300 font-mono tracking-wide">
+          <div>
+            <a href="/case-studies/vmo2-revenue-engine" class="btn-red text-center text-white px-6 py-3 rounded-sm font-bold text-sm tracking-wider uppercase inline-block w-full sm:w-auto hover:opacity-90 transition-opacity">
               Read Blueprint
             </a>
           </div>
         </article>
 
-        <!-- Case Study 2: Spark Transformation (Existing) -->
-        <article class="bg-neutral-900 border border-neutral-800 rounded-3xl overflow-hidden shadow-2xl flex flex-col group hover:border-emerald-500/40 transition-all duration-300">
-          <div class="p-8 flex-grow">
-            <div class="flex items-center justify-between gap-4 mb-4">
-              <span class="px-3 py-1 bg-teal-500/10 text-teal-400 text-xs font-semibold rounded-full border border-teal-500/20">
+        <!-- Case Study 2: Spark Transformation -->
+        <article class="bg-[#F4F7F6] border-2 border-gray-200/60 rounded-sm p-8 flex flex-col justify-between hover:border-[#E31B23] transition-all duration-300 shadow-sm relative group">
+          <div>
+            <div class="flex items-center justify-between gap-4 mb-6">
+              <span class="px-3 py-1 bg-[#004D40]/5 text-[#004D40] text-xs font-bold uppercase tracking-wider rounded-sm border border-[#004D40]/10">
                 System Migration &amp; SLA Alignment
               </span>
-              <span class="text-xs font-mono text-neutral-500">Historical</span>
+              <span class="text-xs font-mono text-gray-400">Historical</span>
             </div>
             
-            <h2 class="text-2xl font-bold text-white group-hover:text-teal-400 transition-colors duration-300 mb-3">
+            <h2 class="text-2xl lg:text-3xl font-bold text-[#1A1A1B] group-hover:text-[#E31B23] transition-colors duration-300 mb-4 leading-tight">
               Spark Transformation: Legacy to Cloud Orchestration
             </h2>
             
-            <p class="text-neutral-400 text-sm font-light leading-relaxed mb-6">
+            <p class="text-gray-600 text-sm leading-[1.6] font-light mb-8">
               A comprehensive blueprint mapping legacy database pipelines into a streamlined Marketo/Adobe Cloud deployment. Standardized global lead hand-off rules and established operational SLAs for cross-border markets.
             </p>
 
-            <div class="grid grid-cols-2 gap-4 border-t border-neutral-800/80 pt-4 mb-2">
+            <div class="grid grid-cols-2 gap-4 border-t border-gray-200/80 pt-6 mb-8">
               <div>
-                <span class="block text-neutral-500 text-xs uppercase font-semibold">Integrations</span>
+                <span class="block text-gray-400 text-[10px] uppercase font-semibold">Integrations</span>
                 <span class="text-white text-xs font-mono font-medium">Adobe Cloud Migration</span>
               </div>
               <div>
@@ -97,7 +100,7 @@ const metadata = {
           </div>
           
           <div class="px-8 pb-8 pt-2">
-            <a href="/case-studies/spark-transformation" class="inline-flex items-center justify-center w-full sm:w-auto px-5 py-2.5 bg-neutral-800 hover:bg-emerald-500 text-white hover:text-neutral-950 text-sm font-bold rounded-lg transition-all duration-300 font-mono tracking-wide">
+            <a href="/case-studies/spark-transformation" class="btn-red px-6 py-2.5 text-white text-sm font-bold rounded-sm inline-block font-mono tracking-wide text-center w-full sm:w-auto">
               Read Blueprint
             </a>
           </div>
@@ -108,9 +111,6 @@ const metadata = {
 
     <!-- Social Proof Client Logo Bar Component -->
     <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-neutral-800/80 pt-16">
-      <div class="text-center mb-8">
-        <p class="text-xs uppercase tracking-widest font-mono text-neutral-500 font-semibold">Trusted By International Enterprise Leaders</p>
-      </div>
       <ClientLogos />
     </section>
   </main>
