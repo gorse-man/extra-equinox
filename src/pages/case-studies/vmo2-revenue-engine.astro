@@ -13,16 +13,15 @@ const metadata = {
 ---
 
 <BaseLayout title={metadata.title} description={metadata.description} keywords={metadata.keywords}>
-  <!-- Navigation Header -->
   <Nav />
 
-  <main class="bg-white text-neutral-900 min-h-screen pt-24 pb-16 overflow-x-hidden">
+  <main class="bg-white text-[#1A1A1B] min-h-screen pt-20">
     <!-- Hero / Header Section with blueprint-grid background -->
-    <section class="blueprint-grid border-b border-gray-200/80 pt-16 pb-12">
-      <div class="max-w-6xl mx-auto px-6">
+    <section class="blueprint-grid py-20 border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-6">
         <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
-          <span class="inline-flex items-center px-3.5 py-1 rounded-sm text-xs font-bold uppercase tracking-wider bg-[#004D40]/5 text-[#004D40] border border-[#004D40]/15">
-            Enterprise ABM & Multi-Platform Integration
+          <span class="inline-flex items-center px-3.5 py-1 rounded-[4px] text-xs font-bold uppercase tracking-wider bg-[#004D40]/5 text-[#004D40] border border-[#004D40]/15">
+            Enterprise ABM &amp; Multi-Platform Integration
           </span>
           <div class="text-xs text-gray-500 font-mono">
             Client: <span class="text-[#1A1A1B] font-bold">VMO2 (Enterprise Division)</span> &nbsp;|&nbsp; Date: <span class="text-[#1A1A1B]">6 June 2026</span>
@@ -33,45 +32,45 @@ const metadata = {
           How I Architected the <span class="text-[#004D40] italic font-serif">Enterprise Revenue Engine</span> for VMO2
         </h1>
         
-        <p class="text-lg sm:text-xl text-gray-600 max-w-4xl leading-relaxed font-light">
+        <p class="text-lg sm:text-xl text-gray-600 max-w-4xl leading-[1.6] font-light">
           Bridging the gaps between Enterprise ABM Sales, Marketing Operations (MOPs), and Demand Generation to transform siloed Tier 1 tech stacks into an event-driven, real-time intelligence loop.
         </p>
 
         <!-- Key Impact Metrics Bar -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
-          <div class="bg-white p-6 rounded-sm border border-gray-200 shadow-sm hover:border-[#E31B23]/30 transition-all duration-300">
-            <div class="text-xs font-bold text-[#E31B23] uppercase tracking-wider mb-1">Latency Reduction</div>
-            <div class="text-3xl font-extrabold text-[#1A1A1B] mb-1">7 Days &rarr; &lt;15 Mins</div>
+          <div class="bg-[#F4F7F6] p-6 rounded-[4px] border border-gray-200 shadow-sm hover:border-[#E31B23]/30 transition-all duration-300">
+            <div class="text-xs font-bold text-[#E31B23] uppercase tracking-wider mb-1 font-mono">Latency Reduction</div>
+            <div class="text-2xl font-bold text-[#1A1A1B] mb-1">7 Days &rarr; &lt;15 Mins</div>
             <p class="text-xs text-gray-500 font-light">ABM loop delay virtually eliminated for hot prospects.</p>
           </div>
-          <div class="bg-white p-6 rounded-2xl border border-gray-200 hover:border-emerald-500/30 transition-all duration-300">
-            <div class="text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-1">System Orchestration</div>
-            <div class="text-3xl font-extrabold text-[#1A1A1B] mb-1">3 Giants</div>
-            <p class="text-xs text-gray-500">Eloqua + D&B RevUp + Salesforce CRM fully unified.</p>
+          <div class="bg-[#F4F7F6] p-6 rounded-[4px] border border-gray-200 shadow-sm hover:border-[#E31B23]/30 transition-all duration-300">
+            <div class="text-xs font-bold text-[#004D40] uppercase tracking-wider mb-1 font-mono">System Orchestration</div>
+            <div class="text-2xl font-bold text-[#1A1A1B] mb-1">3 Giants</div>
+            <p class="text-xs text-gray-500 font-light">Eloqua + D&B RevUp + Salesforce CRM fully unified.</p>
           </div>
-          <div class="bg-white p-6 rounded-2xl border border-gray-200 hover:border-emerald-500/30 transition-all duration-300">
-            <div class="text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-1">Governance Model</div>
-            <div class="text-3xl font-extrabold text-white mb-1">4 Layers</div>
-            <p class="text-xs text-gray-500">Aligned via Process, Application, Data, &amp; Integration framework.</p>
+          <div class="bg-[#F4F7F6] p-6 rounded-[4px] border border-gray-200 shadow-sm hover:border-[#E31B23]/30 transition-all duration-300">
+            <div class="text-xs font-bold text-[#004D40] uppercase tracking-wider mb-1 font-mono">Governance Model</div>
+            <div class="text-2xl font-bold text-[#1A1A1B] mb-1">4 Layers</div>
+            <p class="text-xs text-gray-500 font-light">Aligned via Process, Application, Data, &amp; Integration framework.</p>
           </div>
-          <div class="bg-white p-6 rounded-2xl border border-gray-200 hover:border-emerald-500/30 transition-all duration-300">
-            <div class="text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-1">Technical Debt</div>
-            <div class="text-3xl font-extrabold text-white mb-1">0 Custom Bloat</div>
-            <p class="text-xs text-gray-500">Native, scalable REST Webhook orchestration.</p>
+          <div class="bg-[#F4F7F6] p-6 rounded-[4px] border border-gray-200 shadow-sm hover:border-[#E31B23]/30 transition-all duration-300">
+            <div class="text-xs font-bold text-[#E31B23] uppercase tracking-wider mb-1 font-mono">Technical Debt</div>
+            <div class="text-2xl font-bold text-[#1A1A1B] mb-1">0 Custom Bloat</div>
+            <p class="text-xs text-gray-500 font-light">Native, scalable REST Webhook orchestration.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Executive Summary Section -->
-    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <section class="max-w-7xl mx-auto px-6 py-16">
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
         <div class="lg:col-span-2 space-y-8">
           <div>
-            <h2 class="text-2xl font-bold text-black mb-4 flex items-center gap-2">
+            <h2 class="text-2xl font-bold text-[#1A1A1B] mb-4 flex items-center gap-2">
               <span class="w-2.5 h-2.5 bg-[#E31B23] rounded-none"></span> Executive Summary
             </h2>
-            <div class="text-gray-700 space-y-4 leading-relaxed font-light">
+            <div class="text-gray-700 space-y-4 leading-[1.6] font-light">
               <p>
                 When a major global enterprise invests heavily in Tier 1 marketing technology, the expectation is rapid pipeline acceleration. However, without a structural blueprint connecting GTM (Go-to-Market) strategy to technical execution, high-end platforms often end up operating as expensive, siloed databases.
               </p>
@@ -85,10 +84,10 @@ const metadata = {
           </div>
 
           <div>
-            <h2 class="text-2xl font-bold text-black mb-4 flex items-center gap-2">
+            <h2 class="text-2xl font-bold text-[#1A1A1B] mb-4 flex items-center gap-2">
               <span class="w-2.5 h-2.5 bg-[#E31B23] rounded-none"></span> The Strategic Challenge
             </h2>
-            <div class="text-gray-700 space-y-4 leading-relaxed font-light">
+            <div class="text-gray-700 space-y-4 leading-[1.6] font-light">
               <p>
                 The client made a significant capital investment by purchasing Dun & Bradstreet (D&B) RevUp to spearhead their Enterprise ABM motion. They already possessed a mature Oracle Eloqua instance and a robust Salesforce CRM footprint.
               </p>
@@ -119,30 +118,30 @@ const metadata = {
 
         <!-- Sidebar Details -->
         <div class="space-y-6">
-          <div class="bg-[#F4F7F6] border border-gray-200 p-6 rounded-sm shadow-sm">
-            <h3 class="text-md font-bold uppercase tracking-wider text-[#1A1A1B] mb-4 border-b border-gray-200 pb-2">Architectural Profile</h3>
+          <div class="bg-[#F4F7F6] border border-gray-200 p-6 rounded-[4px] shadow-sm">
+            <h3 class="text-md font-bold uppercase tracking-wider text-[#1A1A1B] mb-4 border-b border-gray-200 pb-2 font-mono">Architectural Profile</h3>
             <div class="space-y-4 text-xs">
               <div>
-                <span class="block text-gray-400 uppercase tracking-wider mb-1">Consultant & Architect</span>
+                <span class="block text-gray-400 uppercase tracking-wider mb-1 font-mono">Consultant &amp; Architect</span>
                 <span class="text-[#1A1A1B] font-bold">Lee Gorse, Principal</span>
               </div>
               <div>
-                <span class="block text-gray-400 uppercase tracking-wider mb-1">Consultancy Brand</span>
+                <span class="block text-gray-400 uppercase tracking-wider mb-1 font-mono">Consultancy Brand</span>
                 <span class="text-[#E31B23] font-bold font-mono">The Automation Specialist (TAMS)</span>
               </div>
               <div>
-                <span class="block text-gray-400 uppercase tracking-wider mb-1">Technology Stack Managed</span>
-                <span class="text-[#1A1A1B] font-bold">Oracle Eloqua, D&B RevUp, Salesforce CRM, REST Webhooks</span>
+                <span class="block text-gray-400 uppercase tracking-wider mb-1 font-mono">Technology Stack Managed</span>
+                <span class="text-[#1A1A1B] font-bold">Oracle Eloqua, D&amp;B RevUp, Salesforce CRM</span>
               </div>
               <div>
-                <span class="block text-gray-400 uppercase tracking-wider mb-1">Engagement Style</span>
+                <span class="block text-gray-400 uppercase tracking-wider mb-1 font-mono">Engagement Style</span>
                 <span class="text-[#1A1A1B] font-bold">High-Touch Strategic Architecture (TDD &amp; Governance)</span>
               </div>
             </div>
           </div>
 
-          <div class="bg-[#004D40] text-white p-6 rounded-sm">
-            <h4 class="text-[#A7FFEB] font-bold uppercase tracking-wider text-xs mb-2">The Positioning Core</h4>
+          <div class="bg-[#004D40] text-white p-6 rounded-[4px]">
+            <h4 class="text-[#A7FFEB] font-bold uppercase tracking-wider text-xs mb-2 font-mono">The Positioning Core</h4>
             <p class="text-sm leading-[1.6] font-light">
               "Purchasing enterprise marketing technology is only 10% of the battle. The remaining 90% lies in establishing cross-functional operational alignment and rigorous architectural governance."
             </p>
@@ -154,9 +153,9 @@ const metadata = {
 
     <!-- The Four-Layer Architectural Diagnostic -->
     <section class="bg-[#F4F7F6] py-16 border-y border-gray-200">
-      <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-7xl mx-auto px-6">
         <div class="max-w-3xl mb-12">
-          <span class="text-xs font-bold uppercase tracking-widest text-[#E31B23] block mb-2 font-mono">THE COMPLIANT DIAGNOSTIC</span>
+          <span class="text-xs font-bold uppercase tracking-widest text-[#E31B23] block mb-2 font-mono">[ STRUCTURAL METRICS ]</span>
           <h2 class="text-3xl font-bold text-[#1A1A1B] mb-4">
             The Four-Layer Architectural Diagnostic
           </h2>
@@ -167,7 +166,7 @@ const metadata = {
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <!-- Layer 1 -->
-          <div class="bg-white p-6 rounded-sm border border-gray-200 relative overflow-hidden group hover:border-[#E31B23] transition-all duration-300 shadow-sm">
+          <div class="bg-white p-6 rounded-[4px] border border-gray-200 relative overflow-hidden group hover:border-[#E31B23] transition-all duration-300 shadow-sm">
             <div class="absolute top-0 left-0 w-1 h-full bg-[#004D40]"></div>
             <div class="text-[#004D40] font-mono text-xs mb-3 font-bold">LAYER 01 / PROCESS</div>
             <h3 class="text-lg font-bold text-[#1A1A1B] mb-2">Process Layer</h3>
@@ -177,17 +176,17 @@ const metadata = {
           </div>
 
           <!-- Layer 2 -->
-          <div class="bg-white p-6 rounded-sm border border-gray-200 relative overflow-hidden group hover:border-[#E31B23] transition-all duration-300 shadow-sm">
+          <div class="bg-white p-6 rounded-[4px] border border-gray-200 relative overflow-hidden group hover:border-[#E31B23] transition-all duration-300 shadow-sm">
             <div class="absolute top-0 left-0 w-1 h-full bg-[#E31B23]"></div>
             <div class="text-[#E31B23] font-mono text-xs mb-3 font-bold">LAYER 02 / APPLICATION</div>
             <h3 class="text-lg font-bold text-[#1A1A1B] mb-2">Application Layer</h3>
             <p class="text-gray-600 text-xs leading-[1.6] font-light">
-              Designed blueprints to transition Eloqua from a sequential outbound email tool into an event-driven listener, positioning D&B RevUp as the core account-level intelligence broker.
+              Designed blueprints to transition Eloqua from a sequential outbound email tool into an event-driven listener, positioning D&amp;B RevUp as the core account-level intelligence broker.
             </p>
           </div>
 
           <!-- Layer 3 -->
-          <div class="bg-white p-6 rounded-sm border border-gray-200 relative overflow-hidden group hover:border-[#E31B23] transition-all duration-300 shadow-sm">
+          <div class="bg-white p-6 rounded-[4px] border border-gray-200 relative overflow-hidden group hover:border-[#E31B23] transition-all duration-300 shadow-sm">
             <div class="absolute top-0 left-0 w-1 h-full bg-[#1A1A1B]"></div>
             <div class="text-[#1A1A1B] font-mono text-xs mb-3 font-bold">LAYER 03 / DATA</div>
             <h3 class="text-lg font-bold text-[#1A1A1B] mb-2">Data Layer</h3>
@@ -197,12 +196,12 @@ const metadata = {
           </div>
 
           <!-- Layer 4 -->
-          <div class="bg-white p-6 rounded-sm border border-gray-200 relative overflow-hidden group hover:border-[#E31B23] transition-all duration-300 shadow-sm">
+          <div class="bg-white p-6 rounded-[4px] border border-gray-200 relative overflow-hidden group hover:border-[#E31B23] transition-all duration-300 shadow-sm">
             <div class="absolute top-0 left-0 w-1 h-full bg-[#004D40]"></div>
             <div class="text-[#004D40] font-mono text-xs mb-3 font-bold">LAYER 04 / INTEGRATION</div>
             <h3 class="text-lg font-bold text-[#1A1A1B] mb-2">Integration Layer</h3>
             <p class="text-gray-600 text-xs leading-[1.6] font-light">
-              Decommissioned once-a-week batches. Implemented real-time low-latency REST webhooks from Eloqua to push instant engagement updates directly to D&B and Salesforce dashboards.
+              Decommissioned once-a-week batches. Implemented real-time low-latency REST webhooks from Eloqua to push instant engagement updates directly to D&amp;B and Salesforce dashboards.
             </p>
           </div>
         </div>
@@ -210,7 +209,7 @@ const metadata = {
     </section>
 
     <!-- Interactive/Visual Architectural Flow Blueprint -->
-    <section class="max-w-6xl mx-auto px-6 py-16">
+    <section class="max-w-7xl mx-auto px-6 py-16">
       <div class="max-w-3xl mb-12">
         <span class="text-xs font-bold uppercase tracking-widest text-[#E31B23] block mb-2 font-mono">FLOW TOPOLOGY</span>
         <h2 class="text-3xl font-bold text-[#1A1A1B]">
@@ -221,15 +220,15 @@ const metadata = {
         </p>
       </div>
 
-      <div class="bg-[#1A1A1B] text-white rounded-sm p-6 sm:p-10 shadow-xl relative overflow-hidden">
+      <div class="bg-[#1A1A1B] text-white rounded-[4px] p-6 sm:p-10 shadow-xl relative overflow-hidden">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center relative z-10">
           
           <!-- Box 1: Eloqua -->
-          <div class="bg-white/5 border border-white/10 rounded-sm p-6 relative">
-            <div class="absolute top-3 right-3 text-[10px] font-mono text-[#A7FFEB] bg-[#A7FFEB]/10 px-2 py-0.5 rounded-sm">
+          <div class="bg-white/5 border border-white/10 rounded-[4px] p-6 relative">
+            <div class="absolute top-3 right-3 text-[10px] font-mono text-[#A7FFEB] bg-[#A7FFEB]/10 px-2 py-0.5 rounded-[4px]">
               FIRST-PARTY ENGINE
             </div>
-            <h3 class="text-lg font-bold text-white mb-2">Oracle Eloqua</h3>
+            <h3 class="text-lg font-bold text-white mb-2 font-mono">Oracle Eloqua</h3>
             <p class="text-xs text-gray-400 mb-4 font-light leading-[1.6]">Captures digital body language: asset downloads, web visits, high-value campaign interactions.</p>
             <div class="text-[#A7FFEB] font-mono text-xs flex items-center gap-2">
               <span>&rarr; Real-time REST Webhook</span>
@@ -246,13 +245,13 @@ const metadata = {
           </div>
 
           <!-- Box 2: D&B RevUp -->
-          <div class="bg-white/5 border border-white/10 rounded-sm p-6 relative">
-            <div class="absolute top-3 right-3 text-[10px] font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded">
+          <div class="bg-white/5 border border-white/10 rounded-[4px] p-6 relative">
+            <div class="absolute top-3 right-3 text-[10px] font-mono text-[#A7FFEB] bg-[#A7FFEB]/10 px-2 py-0.5 rounded-[4px]">
               INTEL BROKER
             </div>
-            <h3 class="text-xl font-bold text-white mb-2">D&B RevUp</h3>
-            <p class="text-sm text-neutral-400 mb-4 font-light">Aggregates first-party web metrics and cross-references third-party off-site search intent surges.</p>
-            <div class="text-emerald-400 font-mono text-xs flex items-center gap-2">
+            <h3 class="text-xl font-bold text-white mb-2 font-mono">D&amp;B RevUp</h3>
+            <p class="text-sm text-gray-400 mb-4 font-light leading-[1.6]">Aggregates first-party web metrics and cross-references third-party off-site search intent surges.</p>
+            <div class="text-[#A7FFEB] font-mono text-xs flex items-center gap-2">
               <span>&rarr; Recalculates Engagement Score</span>
             </div>
           </div>
@@ -260,19 +259,19 @@ const metadata = {
           <!-- Connector 2 -->
           <div class="lg:col-span-3 flex flex-col items-center justify-center py-4">
             <div class="h-10 w-0.5 bg-gradient-to-b from-[#E31B23] to-[#004D40] lg:h-12"></div>
-            <span class="text-[10px] text-neutral-400 font-mono mt-2">Bypasses weekly batch. Real-time REST POST alert triggered.</span>
+            <span class="text-[10px] text-gray-400 font-mono mt-2">Bypasses weekly batch. Real-time REST POST alert triggered.</span>
           </div>
 
           <!-- Box 3: Salesforce CRM -->
-          <div class="lg:col-span-3 bg-white/5 border border-white/10 rounded-sm p-8 text-center relative max-w-2xl mx-auto w-full">
-            <div class="absolute top-3 right-3 text-[10px] font-mono text-[#E31B23] bg-[#E31B23]/10 px-2 py-0.5 rounded-sm">
+          <div class="lg:col-span-3 bg-white/5 border border-white/10 rounded-[4px] p-8 text-center relative max-w-2xl mx-auto w-full">
+            <div class="absolute top-3 right-3 text-[10px] font-mono text-[#E31B23] bg-[#E31B23]/10 px-2 py-0.5 rounded-[4px]">
               SALES CRM INTERFACE
             </div>
-            <h3 class="text-xl font-bold text-white mb-3">Salesforce CRM</h3>
+            <h3 class="text-xl font-bold text-white mb-3 font-mono">Salesforce CRM</h3>
             <p class="text-xs text-gray-300 max-w-lg mx-auto font-light leading-[1.6] mb-4">
               "Account-Level Recommendation Tasks" dynamically written directly to the Account Object. Account Executives see target-rich dashboards highlighting precisely <strong>what</strong> topics are surging, <strong>who</strong> is active, and <strong>when</strong> to strike.
             </p>
-            <div class="inline-flex items-center gap-2 text-[10px] font-mono text-[#A7FFEB] bg-[#004D40]/30 px-3.5 py-1.5 rounded-sm border border-[#A7FFEB]/20">
+            <div class="inline-flex items-center gap-2 text-[10px] font-mono text-[#A7FFEB] bg-[#004D40]/30 px-3.5 py-1.5 rounded-[4px] border border-[#A7FFEB]/20">
               <span class="w-1.5 h-1.5 rounded-full bg-[#A7FFEB] animate-ping"></span>
               IMMEDIATE ROUTING SECURED IN &lt;15 MINS
             </div>
@@ -283,13 +282,13 @@ const metadata = {
     </section>
 
     <!-- Detailed Solutions Breakdown: Act 1 & Act 2 -->
-    <section class="max-w-6xl mx-auto px-6 py-8">
+    <section class="max-w-7xl mx-auto px-6 py-8">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         
         <!-- Act 1 Block -->
-        <div class="bg-[#F4F7F6] border border-gray-200 p-8 rounded-sm">
+        <div class="bg-[#F4F7F6] border border-gray-200 p-8 rounded-[4px]">
           <div class="text-[10px] font-mono text-[#E31B23] mb-2 uppercase tracking-widest font-bold">Act I: Tactical Architecture</div>
-          <h3 class="text-2xl font-bold text-[#1A1A1B] mb-4">The Account Recommendation Pipeline</h3>
+          <h3 class="text-2xl font-bold text-[#1A1A1B] mb-4 leading-tight">The Account Recommendation Pipeline</h3>
           <p class="text-gray-700 text-sm leading-[1.6] font-light mb-4">
             When target accounts display intense search surges on third-party channels (captured via D&B RevUp), the intent signals are ingested. Simultaneously, Eloqua feeds real-time first-party digital interactions back to RevUp to calculate the combined engagement score.
           </p>
@@ -299,9 +298,9 @@ const metadata = {
         </div>
 
         <!-- Act 2 Block -->
-        <div class="bg-[#F4F7F6] border border-gray-200 p-8 rounded-sm">
+        <div class="bg-[#F4F7F6] border border-gray-200 p-8 rounded-[4px]">
           <div class="text-[10px] font-mono text-[#E31B23] mb-2 uppercase tracking-widest font-bold">Act II: Dynamic Lead Flow</div>
-          <h3 class="text-2xl font-bold text-[#1A1A1B] mb-4">Continuous Inbound Lead Enrichment</h3>
+          <h3 class="text-2xl font-bold text-[#1A1A1B] mb-4 leading-tight">Continuous Inbound Lead Enrichment</h3>
           <p class="text-gray-700 text-sm leading-[1.6] font-light mb-4">
             As individual prospects within these target accounts interact with campaigns, Oracle Eloqua triggers a real-time API request to D&B's enrichment API. This waterfall model appends complete firmographic data and matching account parent records in real time.
           </p>
@@ -314,8 +313,8 @@ const metadata = {
     </section>
 
     <!-- Strategic Governance & Business Outcomes -->
-    <section class="max-w-6xl mx-auto px-6 py-16">
-      <div class="bg-[#1A1A1B] text-white p-8 sm:p-12 rounded-sm relative">
+    <section class="max-w-7xl mx-auto px-6 py-16">
+      <div class="bg-[#1A1A1B] text-white p-8 sm:p-12 rounded-[4px] relative">
         <h2 class="text-3xl font-bold mb-8 italic">Strategic Governance &amp; Business Outcomes</h2>
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -366,7 +365,7 @@ const metadata = {
             <p class="text-white font-bold text-lg mb-1">Need enterprise-grade architecture for your GTM stack?</p>
             <p class="text-gray-400 text-sm font-light">Avoid expensive, siloed tools. Build an automated revenue intelligence loop.</p>
           </div>
-          <a href="/contact" class="btn-red px-6 py-3 text-white font-bold rounded-sm tracking-wider uppercase inline-block hover:opacity-90 transition-opacity text-center w-full sm:w-auto">
+          <a href="/contact" class="btn-red px-6 py-3 text-white font-bold rounded-[4px] tracking-wider uppercase inline-block hover:opacity-90 transition-opacity text-center w-full sm:w-auto">
             Book Strategic Audit
           </a>
         </div>
@@ -374,11 +373,10 @@ const metadata = {
     </section>
 
     <!-- Social Proof Client Logo Bar Component -->
-    <section class="max-w-6xl mx-auto px-6 pt-8 pb-12">
+    <section class="max-w-7xl mx-auto px-6 pt-8 pb-12">
       <ClientLogos />
     </section>
   </main>
 
-  <!-- Global Footer Component -->
   <Footer />
 </BaseLayout>
