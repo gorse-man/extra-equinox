@@ -1,0 +1,385 @@
+---
+import BaseLayout from '../../components/BaseLayout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import ClientLogos from '../../components/ClientLogos.astro';
+
+// Structured Metadata targeting high-value Enterprise consulting queries
+const metadata = {
+  title: "VMO2 Enterprise Revenue Engine Case Study | TAMS",
+  description: "How Lee Gorse (The Automation Specialist) integrated Oracle Eloqua, D&B RevUp, and Salesforce into a real-time account recommendation engine for VMO2.",
+  keywords: "Marketing Solution Architect, Oracle Eloqua Consultant, D&B RevUp Integration, Salesforce ABM Strategy, Account-Based Marketing Architecture"
+};
+---
+
+<BaseLayout title={metadata.title} description={metadata.description} keywords={metadata.keywords}>
+  <!-- Navigation Header -->
+  <Nav />
+
+  <main class="bg-neutral-950 text-neutral-100 min-h-screen pt-24 pb-16 overflow-x-hidden">
+    <!-- Hero / Header Section -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-8 border-b border-neutral-800">
+      <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+        <span class="inline-flex items-center px-3.5 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+          Enterprise ABM & Multi-Platform Integration
+        </span>
+        <div class="text-sm text-neutral-400 font-mono">
+          Client: <span class="text-white font-semibold">VMO2 (Enterprise Division)</span> &nbsp;|&nbsp; Date: <span class="text-white">6 June 2026</span>
+        </div>
+      </div>
+      
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+        How I Architected the <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300">Enterprise Revenue Engine</span> for VMO2
+      </h1>
+      
+      <p class="text-lg sm:text-xl text-neutral-300 max-w-4xl leading-relaxed font-light">
+        Bridging the gaps between Enterprise ABM Sales, Marketing Operations (MOPs), and Demand Generation to transform siloed Tier 1 tech stacks into an event-driven, real-time intelligence loop.
+      </p>
+
+      <!-- Key Impact Metrics Bar -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+        <div class="bg-neutral-900/60 p-6 rounded-2xl border border-neutral-800 hover:border-emerald-500/30 transition-all duration-300">
+          <div class="text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-1">Latency Reduction</div>
+          <div class="text-3xl font-extrabold text-white mb-1">7 Days &rarr; &lt;15 Mins</div>
+          <p class="text-xs text-neutral-400">ABM loop delay virtually eliminated for hot prospects.</p>
+        </div>
+        <div class="bg-neutral-900/60 p-6 rounded-2xl border border-neutral-800 hover:border-emerald-500/30 transition-all duration-300">
+          <div class="text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-1">System Orchestration</div>
+          <div class="text-3xl font-extrabold text-white mb-1">3 Giants</div>
+          <p class="text-xs text-neutral-400">Eloqua + D&B RevUp + Salesforce CRM fully unified.</p>
+        </div>
+        <div class="bg-neutral-900/60 p-6 rounded-2xl border border-neutral-800 hover:border-emerald-500/30 transition-all duration-300">
+          <div class="text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-1">Governance Model</div>
+          <div class="text-3xl font-extrabold text-white mb-1">4 Layers</div>
+          <p class="text-xs text-neutral-400">Aligned via Process, Application, Data, &amp; Integration framework.</p>
+        </div>
+        <div class="bg-neutral-900/60 p-6 rounded-2xl border border-neutral-800 hover:border-emerald-500/30 transition-all duration-300">
+          <div class="text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-1">Technical Debt</div>
+          <div class="text-3xl font-extrabold text-white mb-1">0 Custom Bloat</div>
+          <p class="text-xs text-neutral-400">Native, scalable REST Webhook orchestration.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Executive Summary Section -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <div class="lg:col-span-2 space-y-8">
+          <div>
+            <h2 class="text-2xl font-bold text-white mb-4 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Executive Summary
+            </h2>
+            <div class="text-neutral-300 space-y-4 leading-relaxed font-light">
+              <p>
+                When a major global enterprise invests heavily in Tier 1 marketing technology, the expectation is rapid pipeline acceleration. However, without a structural blueprint connecting GTM (Go-to-Market) strategy to technical execution, high-end platforms often end up operating as expensive, siloed databases.
+              </p>
+              <p>
+                Operating through my consultancy, <strong>The Automation Specialist</strong>, I acted as the strategic architect for this premier UK telecommunications provider. By bridging the gaps between the Enterprise ABM Sales, Marketing Operations (MOPs), and Demand Generation (SME) teams, I integrated <strong>Oracle Eloqua</strong>, <strong>D&B RevUp</strong>, and <strong>Salesforce CRM</strong> into a high-velocity, automated intelligence loop.
+              </p>
+              <p>
+                The core outcome of this architecture was the delivery of real-time, high-value <strong>Account-Level Recommendations</strong> directly inside Salesforce. By dynamically combining third-party intent surges with first-party digital interactions, I built a predictive orchestration engine that tells enterprise account owners exactly which accounts to target, at the precise moment they are ready to buy.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h2 class="text-2xl font-bold text-white mb-4 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span> The Strategic Challenge
+            </h2>
+            <div class="text-neutral-300 space-y-4 leading-relaxed font-light">
+              <p>
+                The client made a significant capital investment by purchasing Dun & Bradstreet (D&B) RevUp to spearhead their Enterprise ABM motion. They already possessed a mature Oracle Eloqua instance and a robust Salesforce CRM footprint.
+              </p>
+              <p>
+                However, they hit immediate execution bottlenecks. Purchasing high-end technology is only ten percent of the battle; the remaining ninety percent lies in establishing architectural governance and operational alignment. I was brought in to resolve four critical friction points:
+              </p>
+              <ul class="space-y-3 list-none pl-0 mt-4 text-neutral-300">
+                <li class="flex items-start gap-3">
+                  <span class="flex-shrink-0 text-emerald-400 font-mono mt-1">[!]</span>
+                  <span><strong>Siloed GTM Vision:</strong> There was no unified, documented GTM strategy spanning the Enterprise ABM or the SME Demand Gen teams.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="flex-shrink-0 text-emerald-400 font-mono mt-1">[!]</span>
+                  <span><strong>Latency in the ABM Loop:</strong> High-value account recommendations generated within D&B RevUp were only syncing to Salesforce once a week. Acting on a seven-day lag on intent data meant account executives were contacting cold prospects.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="flex-shrink-0 text-emerald-400 font-mono mt-1">[!]</span>
+                  <span><strong>Lack of Combined Intent Signals:</strong> Account prioritisation was siloed. Sales reps had no way of seeing third-party intent surges matched against first-party web and campaign engagement.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="flex-shrink-0 text-emerald-400 font-mono mt-1">[!]</span>
+                  <span><strong>Lead Hand-Off Disconnection:</strong> Individual high-intent leads captured in Eloqua were trapped in marketing queues, lacking the immediate routing architecture required to push them to BDMs.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar Details -->
+        <div class="space-y-6">
+          <div class="bg-neutral-900 border border-neutral-800 p-6 rounded-2xl shadow-xl">
+            <h3 class="text-lg font-bold text-white mb-4 border-b border-neutral-800 pb-2">Architectural Profile</h3>
+            <div class="space-y-4 text-sm">
+              <div>
+                <span class="block text-neutral-400 text-xs uppercase tracking-wider">Consultant & Architect</span>
+                <span class="text-white font-medium">Lee Gorse, Principal</span>
+              </div>
+              <div>
+                <span class="block text-neutral-400 text-xs uppercase tracking-wider">Consultancy Brand</span>
+                <span class="text-emerald-400 font-medium font-mono">The Automation Specialist (TAMS)</span>
+              </div>
+              <div>
+                <span class="block text-neutral-400 text-xs uppercase tracking-wider">Technology Stack Managed</span>
+                <span class="text-white font-medium">Oracle Eloqua, D&B RevUp, Salesforce CRM, REST Webhooks</span>
+              </div>
+              <div>
+                <span class="block text-neutral-400 text-xs uppercase tracking-wider">Engagement Style</span>
+                <span class="text-white font-medium">High-Touch Strategic Architecture (TDD &amp; Governance)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-emerald-950/20 border border-emerald-500/20 p-6 rounded-2xl">
+            <h4 class="text-emerald-400 font-bold mb-2">The Positioning Core</h4>
+            <p class="text-sm text-neutral-300 leading-relaxed font-light">
+              "Purchasing enterprise marketing technology is only 10% of the battle. The remaining 90% lies in establishing cross-functional operational alignment and rigorous architectural governance."
+            </p>
+            <span class="block mt-4 text-xs font-mono text-neutral-400">— Lee Gorse, Principal Consultant</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Four-Layer Architectural Diagnostic -->
+    <section class="bg-neutral-900/40 py-16 border-y border-neutral-800/80">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <h2 class="text-3xl font-extrabold text-white mb-4">
+            The Four-Layer Architectural Diagnostic
+          </h2>
+          <p class="text-neutral-400 font-light">
+            To resolve these systemic bottlenecks, I applied my proprietary structural diagnostic framework to evaluate and redesign the client's complex multi-platform ecosystem.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Layer 1 -->
+          <div class="bg-neutral-950 p-6 rounded-2xl border border-neutral-800 relative overflow-hidden group hover:border-emerald-500/40 transition-all duration-300">
+            <div class="absolute top-0 left-0 w-1 h-full bg-emerald-500"></div>
+            <div class="text-emerald-400 font-mono text-xs mb-3 font-semibold">LAYER 01</div>
+            <h3 class="text-lg font-bold text-white mb-2">Process Layer</h3>
+            <p class="text-sm text-neutral-400 leading-relaxed font-light">
+              Led cross-functional alignment workshops between Sales, MOPs, and Demand Gen to define SLAs, SLA triggers, and what constitutes a "Sales-Ready Account" versus a "Hot Inbound Lead".
+            </p>
+          </div>
+
+          <!-- Layer 2 -->
+          <div class="bg-neutral-950 p-6 rounded-2xl border border-neutral-800 relative overflow-hidden group hover:border-emerald-500/40 transition-all duration-300">
+            <div class="absolute top-0 left-0 w-1 h-full bg-emerald-500"></div>
+            <div class="text-emerald-400 font-mono text-xs mb-3 font-semibold">LAYER 02</div>
+            <h3 class="text-lg font-bold text-white mb-2">Application Layer</h3>
+            <p class="text-sm text-neutral-400 leading-relaxed font-light">
+              Designed blueprints to transition Eloqua from a sequential outbound email tool into an event-driven listener, positioning D&B RevUp as the core account-level intelligence broker.
+            </p>
+          </div>
+
+          <!-- Layer 3 -->
+          <div class="bg-neutral-950 p-6 rounded-2xl border border-neutral-800 relative overflow-hidden group hover:border-emerald-500/40 transition-all duration-300">
+            <div class="absolute top-0 left-0 w-1 h-full bg-emerald-500"></div>
+            <div class="text-emerald-400 font-mono text-xs mb-3 font-semibold">LAYER 03</div>
+            <h3 class="text-lg font-bold text-white mb-2">Data Layer</h3>
+            <p class="text-sm text-neutral-400 leading-relaxed font-light">
+              Built a bidirectional loop feeding the Salesforce Account object. Integrated first-party digital body language from Eloqua back to RevUp to calculate a dynamic "Account Engagement Score".
+            </p>
+          </div>
+
+          <!-- Layer 4 -->
+          <div class="bg-neutral-950 p-6 rounded-2xl border border-neutral-800 relative overflow-hidden group hover:border-emerald-500/40 transition-all duration-300">
+            <div class="absolute top-0 left-0 w-1 h-full bg-emerald-500"></div>
+            <div class="text-emerald-400 font-mono text-xs mb-3 font-semibold">LAYER 04</div>
+            <h3 class="text-lg font-bold text-white mb-2">Integration Layer</h3>
+            <p class="text-sm text-neutral-400 leading-relaxed font-light">
+              Decommissioned once-a-week batches. Implemented real-time low-latency REST webhooks from Eloqua to push instant engagement updates directly to D&B and Salesforce dashboards.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive/Visual Architectural Flow Blueprint -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-3xl font-extrabold text-white mb-4">
+          The Closed-Loop Intent Architecture Blueprint
+        </h2>
+        <p class="text-neutral-400 font-light">
+          My system-level schematic illustrating how web signals and intent triggers bypass traditional batch lag to activate real-time sales motions.
+        </p>
+      </div>
+
+      <div class="bg-neutral-900 border border-neutral-800 rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
+        <!-- Visual diagram represented with high-fidelity flex/grid components -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center relative z-10">
+          
+          <!-- Box 1: Eloqua -->
+          <div class="bg-neutral-950 border border-neutral-800 rounded-2xl p-6 text-center lg:text-left relative">
+            <div class="absolute top-3 right-3 text-xs font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded">
+              First-Party Engine
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Oracle Eloqua</h3>
+            <p class="text-sm text-neutral-400 mb-4 font-light">Captures digital body language: asset downloads, web visits, high-value campaign interactions.</p>
+            <div class="text-emerald-400 font-mono text-xs flex items-center justify-center lg:justify-start gap-2">
+              <span>&rarr; Real-time REST Webhook Trigger</span>
+            </div>
+          </div>
+
+          <!-- Step/Connector 1 (CSS Arrow) -->
+          <div class="flex flex-col items-center justify-center text-center py-2 lg:py-0">
+            <div class="h-10 w-0.5 bg-gradient-to-b from-emerald-500 to-teal-500 lg:hidden"></div>
+            <div class="hidden lg:flex flex-col items-center">
+              <span class="text-xs text-neutral-400 font-mono mb-2">First-Party Signal Ingestion</span>
+              <svg class="w-8 h-8 text-emerald-400 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path></svg>
+            </div>
+          </div>
+
+          <!-- Box 2: D&B RevUp -->
+          <div class="bg-neutral-950 border border-neutral-800 rounded-2xl p-6 text-center lg:text-left relative">
+            <div class="absolute top-3 right-3 text-xs font-mono text-teal-400 bg-teal-500/10 px-2 py-0.5 rounded">
+              Intelligence Broker
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">D&B RevUp</h3>
+            <p class="text-sm text-neutral-400 mb-4 font-light">Aggregates first-party web metrics and cross-references third-party off-site search intent surges.</p>
+            <div class="text-teal-400 font-mono text-xs flex items-center justify-center lg:justify-start gap-2">
+              <span>&rarr; Computes Dynamic Engagement Score</span>
+            </div>
+          </div>
+
+          <!-- Connector 2 -->
+          <div class="lg:col-span-3 flex flex-col items-center justify-center py-4">
+            <div class="h-10 w-0.5 bg-gradient-to-b from-teal-500 to-indigo-500 lg:h-12"></div>
+            <span class="text-xs text-neutral-400 font-mono mt-2">Bypasses weekly batch. Real-time REST POST alert triggered.</span>
+          </div>
+
+          <!-- Box 3: Salesforce CRM -->
+          <div class="lg:col-span-3 bg-neutral-950 border border-neutral-800 rounded-2xl p-8 text-center relative max-w-2xl mx-auto w-full">
+            <div class="absolute top-3 right-3 text-xs font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded">
+              Sales Interface
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-3">Salesforce CRM</h3>
+            <p class="text-sm text-neutral-300 max-w-lg mx-auto font-light leading-relaxed mb-4">
+              "Account-Level Recommendation Tasks" dynamically written directly to the Account Object. Account Executives see target-rich dashboards highlighting precisely <strong>what</strong> topics are surging, <strong>who</strong> is active, and <strong>when</strong> to strike.
+            </p>
+            <div class="inline-flex items-center gap-2 text-xs font-mono text-emerald-400 bg-emerald-900/30 px-3.5 py-1.5 rounded-full border border-emerald-500/30">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+              Immediate target routing achieved in &lt;15 mins
+            </div>
+          </div>
+
+        </div>
+        <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-emerald-500/5 blur-3xl rounded-full"></div>
+      </div>
+    </section>
+
+    <!-- Detailed Solutions Breakdown: Act 1 & Act 2 -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Act 1 Block -->
+        <div class="bg-neutral-900/40 border border-neutral-800 p-8 rounded-3xl">
+          <div class="text-xs font-mono text-emerald-400 mb-2 uppercase tracking-widest font-semibold">Act I: Tactical Architecture</div>
+          <h3 class="text-2xl font-bold text-white mb-4">The Account Recommendation Pipeline</h3>
+          <p class="text-neutral-300 text-sm leading-relaxed font-light mb-4">
+            When target accounts display intense search surges on third-party channels (captured via D&B RevUp), the intent signals are ingested. Simultaneously, Eloqua feeds real-time first-party digital interactions back to RevUp to calculate the combined engagement score.
+          </p>
+          <p class="text-neutral-300 text-sm leading-relaxed font-light">
+            If an account surpasses the designated scoring threshold, an automated Account-Level Recommendation Task is immediately written to the Salesforce Account Object. The account executive receives a priority alert with specific surge topics and key firmographics, enabling high-touch, hyper-personalised sales playbooks.
+          </p>
+        </div>
+
+        <!-- Act 2 Block -->
+        <div class="bg-neutral-900/40 border border-neutral-800 p-8 rounded-3xl">
+          <div class="text-xs font-mono text-emerald-400 mb-2 uppercase tracking-widest font-semibold">Act II: Dynamic Lead Flow</div>
+          <h3 class="text-2xl font-bold text-white mb-4">Continuous Inbound Lead Enrichment</h3>
+          <p class="text-neutral-300 text-sm leading-relaxed font-light mb-4">
+            As individual prospects within these target accounts interact with campaigns, Oracle Eloqua triggers a real-time API request to D&B's enrichment API. This waterfall model appends complete firmographic data and matching account parent records in real time.
+          </p>
+          <p class="text-neutral-300 text-sm leading-relaxed font-light">
+            The fully enriched lead is routed to Salesforce within 15 minutes, perfectly matching the account-level intent profiles. This eliminated incomplete CRM records, bypassed manual routing delays, and solved the chronic sales bottleneck.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Strategic Governance & Business Outcomes -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="bg-neutral-900 border border-neutral-800 p-8 sm:p-12 rounded-3xl relative">
+        <h2 class="text-3xl font-extrabold text-white mb-8">Strategic Governance &amp; Business Outcomes</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="space-y-6">
+            <div>
+              <h4 class="text-lg font-bold text-white mb-2 flex items-center gap-2">
+                <span class="text-emerald-400 font-mono font-medium">[✓]</span> Dynamic Account-Level Prioritisation
+              </h4>
+              <p class="text-neutral-400 text-sm font-light leading-relaxed">
+                I established a real-time account prioritisation view directly inside Salesforce. Sales reps no longer had to log into multiple databases or guess which accounts were active; high-value recommendations were pushed straight to their CRM home screen.
+              </p>
+            </div>
+
+            <div>
+              <h4 class="text-lg font-bold text-white mb-2 flex items-center gap-2">
+                <span class="text-emerald-400 font-mono font-medium">[✓]</span> Absolute Elimination of Latency
+              </h4>
+              <p class="text-neutral-400 text-sm font-light leading-relaxed">
+                The time-to-lead latency was slashed from seven days to under fifteen minutes for hot prospects, and account-level recommendation updates shifted from a weekly batch process to real-time triggers.
+              </p>
+            </div>
+          </div>
+
+          <div class="space-y-6">
+            <div>
+              <h4 class="text-lg font-bold text-white mb-2 flex items-center gap-2">
+                <span class="text-emerald-400 font-mono font-medium">[✓]</span> Unification of ABM and Demand Gen
+              </h4>
+              <p class="text-neutral-400 text-sm font-light leading-relaxed">
+                I delivered the "Success Blueprint" that aligned marketing spend with sales action, proving that the technology investment was directly influencing active, high-value enterprise pipeline.
+              </p>
+            </div>
+
+            <div>
+              <h4 class="text-lg font-bold text-white mb-2 flex items-center gap-2">
+                <span class="text-emerald-400 font-mono font-medium">[✓]</span> Technical Debt Reduction
+              </h4>
+              <p class="text-neutral-400 text-sm font-light leading-relaxed">
+                By designing native, event-driven pathways and avoiding bloated custom code, the integration remained stable, secure, and easy for the internal MOPs team to manage post-delivery.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call to Action Footer -->
+        <div class="border-t border-neutral-800 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div>
+            <p class="text-white font-bold text-lg mb-1">Need enterprise-grade architecture for your GTM stack?</p>
+            <p class="text-neutral-400 text-sm font-light">Avoid expensive, siloed tools. Build an automated revenue intelligence loop.</p>
+          </div>
+          <a href="/contact" class="inline-flex items-center justify-center px-6 py-3 bg-emerald-500 hover:bg-emerald-400 text-neutral-950 font-bold rounded-lg transition-all duration-300 font-mono text-sm tracking-wide shadow-lg shadow-emerald-500/20 hover:shadow-emerald-400/30">
+            Book Strategic Audit
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Proof Client Logo Bar Component -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12">
+      <div class="text-center mb-8">
+        <p class="text-xs uppercase tracking-widest font-mono text-neutral-500 font-semibold">TAMS Strategic Architectures Verified By Enterprise Leaders</p>
+      </div>
+      <ClientLogos />
+    </section>
+  </main>
+
+  <!-- Global Footer Component -->
+  <Footer />
+</BaseLayout>

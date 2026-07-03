@@ -1,40 +1,119 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from '../components/BaseLayout.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
+import ClientLogos from '../components/ClientLogos.astro';
+
+const metadata = {
+  title: "Architectural Case Studies | The Automation Specialist",
+  description: "Enterprise strategic blueprints and integration governance case studies. Proof of architectural excellence from Lee Gorse.",
+  keywords: "ABM Architecture, Marketing Technology Blueprints, Eloqua Consultant Case Study, Martech Governance"
+};
 ---
-<BaseLayout 
-    title="Case Studies: Enterprise Marketing Automation Transformations"
-    description="Explore real-world technical blueprints. Read how Project Spark migrated legacy systems into high-velocity Multi-Org marketing engines."
->
-    <Nav />
-    <main class="pt-40 pb-24 px-6 bg-white">
-        <div class="max-w-7xl mx-auto">
-            <h1 class="text-5xl font-bold mb-16">Revenue Architecture in Action</h1>
-            
-            <div class="grid lg:grid-cols-2 gap-12">
-                <!-- Case Study Card -->
-                <div class="border-2 border-gray-100 hover:border-specialist-red transition-all flex flex-col">
-                    <div class="h-64 bg-architect-charcoal flex items-center justify-center text-white overflow-hidden p-12">
-                        <h2 class="text-3xl font-bold italic text-center leading-tight">Project Spark: Global Transformation</h2>
-                    </div>
-                    <div class="p-10 flex-1 flex flex-col">
-                        <span class="text-xs font-bold uppercase tracking-widest specialist-red mb-4">Tier-1 Telecommunications</span>
-                        <h3 class="text-2xl font-bold mb-4 leading-tight">Multi-Market Marketing Automation Overhaul</h3>
-                        <p class="text-gray-600 mb-8 flex-1">Transitioning a legacy monolithic Eloqua environment into a high-velocity Multi-Org architecture to support a 9% growth target.</p>
-                        <a href="/case-studies/spark-transformation" class="governance-green font-bold flex items-center gap-2 group">
-                            Read Full Transformation Blueprint
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-2 transition-transform"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="bg-[#F4F7F6] p-12 flex flex-col justify-center items-center text-center border border-dashed border-gray-300">
-                    <p class="text-gray-400 font-bold uppercase tracking-widest mb-4">More Blueprints Coming Soon</p>
-                    <p class="text-gray-500 max-w-xs italic">Architecting solutions for Ricoh, HSBC, and Air Products. Case studies undergoing clearance.</p>
-                </div>
+
+<BaseLayout title={metadata.title} description={metadata.description} keywords={metadata.keywords}>
+  <Nav />
+
+  <main class="bg-neutral-950 text-neutral-100 min-h-screen pt-24 pb-16">
+    <!-- Header Section -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-8 border-b border-neutral-800">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6">
+        Architectural <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300">Case Studies</span>
+      </h1>
+      <p class="text-lg text-neutral-300 max-w-3xl leading-relaxed font-light">
+        Proof of high-touch technology governance, strategic design blueprints, and clean integration loops designed for enterprise marketing environments. I don't configure platforms; I design the ecosystems that accelerate pipeline.
+      </p>
+    </section>
+
+    <!-- Case Studies Grid -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+        <!-- Case Study 1: VMO2 (New) -->
+        <article class="bg-neutral-900 border border-neutral-800 rounded-3xl overflow-hidden shadow-2xl flex flex-col group hover:border-emerald-500/40 transition-all duration-300">
+          <div class="p-8 flex-grow">
+            <div class="flex items-center justify-between gap-4 mb-4">
+              <span class="px-3 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-semibold rounded-full border border-emerald-500/20">
+                Enterprise ABM Loop
+              </span>
+              <span class="text-xs font-mono text-neutral-500">June 2026</span>
             </div>
-        </div>
-    </main>
-    <Footer />
+            
+            <h2 class="text-2xl font-bold text-white group-hover:text-emerald-400 transition-colors duration-300 mb-3">
+              VMO2: Architecting the Enterprise Revenue Engine
+            </h2>
+            
+            <p class="text-neutral-400 text-sm font-light leading-relaxed mb-6">
+              How I unified Oracle Eloqua, D&B RevUp, and Salesforce CRM to deliver real-time Account-Level Recommendation alerts to enterprise sales owners, dropping data latency from 7 days down to under 15 minutes.
+            </p>
+
+            <div class="grid grid-cols-2 gap-4 border-t border-neutral-800/80 pt-4 mb-2">
+              <div>
+                <span class="block text-neutral-500 text-xs uppercase font-semibold">Integrations</span>
+                <span class="text-white text-xs font-mono font-medium">Eloqua + RevUp + CRM</span>
+              </div>
+              <div>
+                <span class="block text-neutral-500 text-xs uppercase font-semibold">Primary Focus</span>
+                <span class="text-white text-xs font-mono font-medium">Zero-Latency Signal Loops</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="px-8 pb-8 pt-2">
+            <a href="/case-studies/vmo2-revenue-engine" class="inline-flex items-center justify-center w-full sm:w-auto px-5 py-2.5 bg-neutral-800 hover:bg-emerald-500 text-white hover:text-neutral-950 text-sm font-bold rounded-lg transition-all duration-300 font-mono tracking-wide">
+              Read Blueprint
+            </a>
+          </div>
+        </article>
+
+        <!-- Case Study 2: Spark Transformation (Existing) -->
+        <article class="bg-neutral-900 border border-neutral-800 rounded-3xl overflow-hidden shadow-2xl flex flex-col group hover:border-emerald-500/40 transition-all duration-300">
+          <div class="p-8 flex-grow">
+            <div class="flex items-center justify-between gap-4 mb-4">
+              <span class="px-3 py-1 bg-teal-500/10 text-teal-400 text-xs font-semibold rounded-full border border-teal-500/20">
+                System Migration &amp; SLA Alignment
+              </span>
+              <span class="text-xs font-mono text-neutral-500">Historical</span>
+            </div>
+            
+            <h2 class="text-2xl font-bold text-white group-hover:text-teal-400 transition-colors duration-300 mb-3">
+              Spark Transformation: Legacy to Cloud Orchestration
+            </h2>
+            
+            <p class="text-neutral-400 text-sm font-light leading-relaxed mb-6">
+              A comprehensive blueprint mapping legacy database pipelines into a streamlined Marketo/Adobe Cloud deployment. Standardized global lead hand-off rules and established operational SLAs for cross-border markets.
+            </p>
+
+            <div class="grid grid-cols-2 gap-4 border-t border-neutral-800/80 pt-4 mb-2">
+              <div>
+                <span class="block text-neutral-500 text-xs uppercase font-semibold">Integrations</span>
+                <span class="text-white text-xs font-mono font-medium">Adobe Cloud Migration</span>
+              </div>
+              <div>
+                <span class="block text-neutral-500 text-xs uppercase font-semibold">Primary Focus</span>
+                <span class="text-white text-xs font-mono font-medium">SLA Governance Blueprints</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="px-8 pb-8 pt-2">
+            <a href="/case-studies/spark-transformation" class="inline-flex items-center justify-center w-full sm:w-auto px-5 py-2.5 bg-neutral-800 hover:bg-emerald-500 text-white hover:text-neutral-950 text-sm font-bold rounded-lg transition-all duration-300 font-mono tracking-wide">
+              Read Blueprint
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Social Proof Client Logo Bar Component -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-neutral-800/80 pt-16">
+      <div class="text-center mb-8">
+        <p class="text-xs uppercase tracking-widest font-mono text-neutral-500 font-semibold">Trusted By International Enterprise Leaders</p>
+      </div>
+      <ClientLogos />
+    </section>
+  </main>
+
+  <Footer />
 </BaseLayout>
