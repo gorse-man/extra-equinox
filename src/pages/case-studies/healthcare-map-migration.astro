@@ -1,0 +1,291 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout 
+  title="Enterprise MAP-to-MAP Migration & Data Architecture | TAMS"
+  description="How Lee Gorse (TAMS) architected a seamless Salesforce Marketing Cloud to Oracle Eloqua migration and AWS Data Warehouse integration for a major US-based Healthcare Insurer."
+>
+  <!-- Technical Grid Background Wrapper -->
+  <div class="min-h-screen bg-[#F4F7F6] text-[#1A1A1B] font-sans antialiased relative overflow-hidden">
+    
+    <!-- Subtle 10px Technical Blueprint Grid Overlay -->
+    <div class="absolute inset-0 pointer-events-none opacity-[0.03] bg-[linear-gradient(to_right,#1A1A1B_1px,transparent_1px),linear-gradient(to_bottom,#1A1A1B_1px,transparent_1px)] bg-[size:10px_10px]"></div>
+
+    <!-- Hero Header Block -->
+    <header class="relative border-b-2 border-[#1A1A1B] bg-white py-16 md:py-24">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="flex flex-wrap items-center gap-4 mb-6">
+          <span class="text-xs font-mono uppercase tracking-widest bg-[#004D40] text-white px-3 py-1 font-semibold rounded-sm">Case Study</span>
+          <span class="text-xs font-mono uppercase tracking-widest border border-[#E31B23] text-[#E31B23] px-3 py-1 font-semibold rounded-sm">Status: Approved v1.3</span>
+          <span class="text-xs font-mono text-slate-500">Date: 14 July 2026</span>
+        </div>
+        
+        <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-[#1A1A1B] max-w-4xl leading-tight">
+          Enterprise MAP-to-MAP Migration and Data Architecture Alignment
+        </h1>
+        
+        <p class="mt-6 text-lg md:text-xl text-[#004D40] max-w-3xl font-medium">
+          Consolidating duplicate Tier 1 Marketing Automation platforms, restructuring complex healthcare relational data schemas, and standardising governance for a regional business unit.
+        </p>
+
+        <!-- Technical Metadata Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-12 pt-8 border-t border-slate-200">
+          <div>
+            <h3 class="text-xs font-mono uppercase tracking-wider text-slate-500">Client Profile</h3>
+            <p class="mt-2 text-sm font-semibold">Major US-based Healthcare Insurer <br/><span class="text-xs font-normal text-slate-500">(Hong Kong B2B Business Unit)</span></p>
+          </div>
+          <div>
+            <h3 class="text-xs font-mono uppercase tracking-wider text-slate-500">Architect</h3>
+            <p class="mt-2 text-sm font-semibold">Lee Gorse <br/><span class="text-xs font-normal text-slate-500">The Automation Specialist Ltd</span></p>
+          </div>
+          <div>
+            <h3 class="text-xs font-mono uppercase tracking-wider text-slate-500">Core Technologies</h3>
+            <p class="mt-2 text-sm font-mono text-xs font-semibold text-[#004D40]">Oracle Eloqua / SFMC / Salesforce CRM / AWS Warehouse</p>
+          </div>
+          <div>
+            <h3 class="text-xs font-mono uppercase tracking-wider text-slate-500">Focus Areas</h3>
+            <p class="mt-2 text-sm font-semibold">Solution Architecture, Consolidation, Data Governance</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Narrative Grid -->
+    <main class="max-w-6xl mx-auto px-6 py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Left Column: Core Strategic Narrative -->
+        <div class="lg:col-span-8 space-y-12">
+          
+          <!-- 1. Executive Summary -->
+          <section class="bg-white p-8 md:p-10 border border-slate-200 rounded-sm shadow-sm">
+            <h2 class="text-2xl font-bold text-[#1A1A1B] border-b-2 border-[#E31B23] pb-3 mb-6">1. Executive Summary</h2>
+            <div class="space-y-4 text-slate-700 leading-relaxed">
+              <p>
+                In global enterprises, running duplicate Tier 1 Marketing Automation Platforms (MAPs) across different business units creates immense, unnecessary overhead. The insurer’s Hong Kong B2B division was utilizing a local Salesforce Marketing Cloud (SFMC) instance alongside Oracle Eloqua, which served as the global standard across all other regional business units.
+              </p>
+              <p>
+                To eliminate dual-licensing costs and standardise operations, the insurer initiated a strategic platform consolidation, migration, and decommissioning project to sunset the local SFMC instance and safely migrate all active B2B operations into the global Eloqua environment.
+              </p>
+              <p>
+                I was engaged on a white-label basis via a premier partner agency to provide the high-level technical architecture, design, and strategic oversight for this complex migration. This was not a simple technical "lift-and-shift"; it required standardising a fragmented data layer, re-engineering key customer journeys, migrating legacy asset templates, and establishing a robust technical governance framework to empower the local marketing operations team.
+              </p>
+            </div>
+          </section>
+
+          <!-- 2. Strategic Challenge & The "Why" -->
+          <section class="bg-white p-8 md:p-10 border border-slate-200 rounded-sm shadow-sm">
+            <h2 class="text-2xl font-bold text-[#1A1A1B] border-b-2 border-[#E31B23] pb-3 mb-6">2. Strategic Challenge & The "Why"</h2>
+            <div class="space-y-4 text-slate-700 leading-relaxed">
+              <p>
+                Migrating complex B2B customer journeys between two major enterprise platforms without a rigorous architectural blueprint introduces severe operational, legal, and financial risks. The primary business objectives for this consolidation included:
+              </p>
+              <ul class="list-none space-y-3 mt-4">
+                <li class="flex items-start gap-3">
+                  <span class="text-[#E31B23] mt-1.5 text-xs">■</span>
+                  <span><strong>Commercial Rationalisation:</strong> Sunsetting a secondary Tier 1 platform to eliminate double-licensing overheads and standardise the global martech spend.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-[#E31B23] mt-1.5 text-xs">■</span>
+                  <span><strong>Data Integrity & Customer 360:</strong> Consolidating disparate data inputs from corporate website forms, AWS data lakes, and Salesforce CRM to construct a unified customer profile.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-[#E31B23] mt-1.5 text-xs">■</span>
+                  <span><strong>Operational Continuity:</strong> Re-creating high-value, active customer journeys without losing engagement or breaching compliance standards during the migration.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-[#E31B23] mt-1.5 text-xs">■</span>
+                  <span><strong>Local Enablement:</strong> Upskilling the regional Hong Kong marketing operations team to ensure long-term self-sufficiency and protect database health from day one.</span>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- 3. The Comprehensive Approach (Four-Layer Model) -->
+          <section class="bg-white p-8 md:p-10 border border-slate-200 rounded-sm shadow-sm">
+            <h2 class="text-2xl font-bold text-[#1A1A1B] border-b-2 border-[#E31B23] pb-3 mb-6">3. A Comprehensive Approach</h2>
+            <p class="text-slate-700 leading-relaxed mb-8">
+              To ensure the migration delivered an immediate return on investment, I designed and executed the project through my structured, high-touch **Four-Layer Architectural Framework**:
+            </p>
+
+            <div class="space-y-8">
+              <!-- Process Layer -->
+              <div class="border-l-4 border-[#004D40] pl-6 py-2">
+                <h3 class="text-lg font-bold text-[#004D40] font-mono">A. Process Layer (Operational Governance)</h3>
+                <p class="mt-2 text-slate-700 text-sm leading-relaxed">
+                  A technology migration is fundamentally a change management project. To prevent the local team from falling back into legacy manual habits, I conducted structured training workshops to transition the Hong Kong team's mindset from SFMC's list-based model to Eloqua's segment-and-contact-based database architecture. I standardised campaign intake and execution workflows, establishing clear rules on template-creation permissions versus campaign execution.
+                </p>
+              </div>
+
+              <!-- Application Layer -->
+              <div class="border-l-4 border-[#004D40] pl-6 py-2">
+                <h3 class="text-lg font-bold text-[#004D40] font-mono">B. Application Layer (Platform Configuration)</h3>
+                <p class="mt-2 text-slate-700 text-sm leading-relaxed">
+                  Rather than blindly copying outdated templates, I used the migration as an opportunity to clean and modernise the insurer's technical debt. I sunsetted bloated legacy SFMC HTML code, re-authoring modular, responsive, and brand-compliant email and landing page templates natively within Eloqua. Furthermore, I re-engineered business-critical nurture programs, translating SFMC Journey Builder paths into structured, multi-step Eloqua Program Canvases with built-in exit criteria.
+                </p>
+              </div>
+
+              <!-- Data Layer -->
+              <div class="border-l-4 border-[#004D40] pl-6 py-2">
+                <h3 class="text-lg font-bold text-[#004D40] font-mono">C. Data Layer (The Customer 360 Foundation)</h3>
+                <p class="mt-2 text-slate-700 text-sm leading-relaxed">
+                  Managing complex customer profiles within B2B insurance requires robust relational data schemas. Guided by rigorous data cleansing protocols, I focused the database standardisation on three distinct sources:
+                </p>
+                <ol class="list-decimal pl-5 mt-3 space-y-2 text-slate-700 text-sm">
+                  <li><strong>AWS Data Warehouse:</strong> Served as the central repository for the Customer 360 data model, managing complex policy holdings, corporate hierarchies, and customer tiering.</li>
+                  <li><strong>Salesforce CRM:</strong> Acted as the sales system of record, housing lead, contact, and account objects.</li>
+                  <li><strong>Website Forms:</strong> Served as the first-party transactional capture layer for inbound prospect interest.</li>
+                </ol>
+                <p class="mt-3 text-slate-700 text-sm">
+                  I mapped these inputs into Eloqua, leveraging Custom Data Objects (CDOs) to house relational policy data without bloating the primary contact table.
+                </p>
+              </div>
+
+              <!-- Integration Layer -->
+              <div class="border-l-4 border-[#004D40] pl-6 py-2">
+                <h3 class="text-lg font-bold text-[#004D40] font-mono">D. Integration Layer (Secure Pipelines & Sync)</h3>
+                <p class="mt-2 text-slate-700 text-sm leading-relaxed">
+                  To secure the data pipeline, I architected an automated synchronisation framework between AWS, Salesforce CRM, and Eloqua to ensure real-time lead updates and prevent sync delays. I implemented precise matching logic using <code class="bg-[#F4F7F6] text-[#E31B23] px-1.5 py-0.5 rounded font-mono text-xs">Email Address</code> as the primary key, coupled with Salesforce Contact and Lead IDs to maintain single-record integrity. Strict subscription preference syncs were enforced to ensure that global opt-outs were respected across all systems, maintaining rigorous compliance with regional data privacy laws.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 4. Key Project Milestones -->
+          <section class="bg-white p-8 md:p-10 border border-slate-200 rounded-sm shadow-sm">
+            <h2 class="text-2xl font-bold text-[#1A1A1B] border-b-2 border-[#E31B23] pb-3 mb-6">4. Key Project Milestones</h2>
+            <div class="relative pl-6 border-l border-slate-300 space-y-8 my-4">
+              <!-- Milestone 1 -->
+              <div class="relative">
+                <div class="absolute -left-8.5 top-1.5 bg-[#004D40] h-4 w-4 rounded-full border-4 border-white"></div>
+                <h4 class="font-bold text-base text-[#1A1A1B]">Wave 1: Discovery & Audit (Technical Due Diligence)</h4>
+                <p class="mt-1 text-slate-600 text-sm">
+                  Audited current-state SFMC journeys; defined the global marketing database data dictionary; aligned AWS and Salesforce schemas with the target Eloqua field dictionary.
+                </p>
+              </div>
+              <!-- Milestone 2 -->
+              <div class="relative">
+                <div class="absolute -left-8.5 top-1.5 bg-[#004D40] h-4 w-4 rounded-full border-4 border-white"></div>
+                <h4 class="font-bold text-base text-[#1A1A1B]">Wave 2: Build & Migration (System Configuration)</h4>
+                <p class="mt-1 text-slate-600 text-sm">
+                  Constructed native Eloqua integrations; migrated, modernised, and built modular responsive templates; configured Custom Data Objects (CDOs) for handling inbound AWS policy data.
+                </p>
+              </div>
+              <!-- Milestone 3 -->
+              <div class="relative">
+                <div class="absolute -left-8.5 top-1.5 bg-[#004D40] h-4 w-4 rounded-full border-4 border-white"></div>
+                <h4 class="font-bold text-base text-[#1A1A1B]">Wave 3: Launch & Handoff (UAT & Local Enablement)</h4>
+                <p class="mt-1 text-slate-600 text-sm">
+                  Conducted end-to-end data validation testing; rolled out hands-on Eloqua training for the local Hong Kong marketing operations team; completed a safe system cutover and decommissioned the SFMC instance.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 5. Strategic Value Delivered -->
+          <section class="bg-white p-8 md:p-10 border border-slate-200 rounded-sm shadow-sm">
+            <h2 class="text-2xl font-bold text-[#1A1A1B] border-b-2 border-[#E31B23] pb-3 mb-6">5. Strategic Value Delivered</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+              <div class="p-5 border border-slate-100 bg-[#F4F7F6] rounded-sm">
+                <h4 class="font-bold text-slate-900 mb-2">Direct Cost Savings</h4>
+                <p class="text-sm text-slate-600">
+                  Sunsetting the redundant regional platform completely eliminated double-licensing overheads, immediately returning budget to the local B2B business unit.
+                </p>
+              </div>
+              <div class="p-5 border border-slate-100 bg-[#F4F7F6] rounded-sm">
+                <h4 class="font-bold text-slate-900 mb-2">Technical Debt Eliminated</h4>
+                <p class="text-sm text-slate-600">
+                  Streamlining legacy template assets and restructuring data tables removed years of platform bloat, resulting in faster campaign turnaround times and cleaner analytics.
+                </p>
+              </div>
+              <div class="p-5 border border-slate-100 bg-[#F4F7F6] rounded-sm">
+                <h4 class="font-bold text-slate-900 mb-2">True Customer 360 View</h4>
+                <p class="text-sm text-slate-600">
+                  Bridging the gap between the AWS Data Warehouse and Salesforce CRM provided sales and marketing teams with a real-time, consolidated view of corporate account engagement for the first time.
+                </p>
+              </div>
+              <div class="p-5 border border-slate-100 bg-[#F4F7F6] rounded-sm">
+                <h4 class="font-bold text-slate-900 mb-2">Operational Self-Sufficiency</h4>
+                <p class="text-sm text-slate-600">
+                  Structured workshops and blueprints ensured that the insurer's regional marketing operations team was fully enabled to manage, optimise, and scale the new platform without being dependent on external contractors.
+                </p>
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <!-- Right Column: Contextual Sidebar / CTA -->
+        <div class="lg:col-span-4 space-y-8">
+          
+          <!-- Key Metrics Block -->
+          <div class="bg-[#004D40] text-white p-6 rounded-sm border border-[#1A1A1B]">
+            <h3 class="text-xs font-mono uppercase tracking-widest text-[#A7FFEB] mb-4">Architectural Outcomes</h3>
+            <div class="space-y-6">
+              <div>
+                <span class="text-4xl font-bold font-mono tracking-tight block text-[#A7FFEB]">100%</span>
+                <span class="text-xs text-slate-300 mt-1 block">Decommissioning of Secondary MAP Licensing</span>
+              </div>
+              <hr class="border-[#003d32]"/>
+              <div>
+                <span class="text-4xl font-bold font-mono tracking-tight block text-[#A7FFEB]">Zero</span>
+                <span class="text-xs text-slate-300 mt-1 block">Data Loss or Compliance Infringements During Transition</span>
+              </div>
+              <hr class="border-[#003d32]"/>
+              <div>
+                <span class="text-4xl font-bold font-mono tracking-tight block text-[#A7FFEB]">Real-Time</span>
+                <span class="text-xs text-slate-300 mt-1 block">AWS Warehouse & CRM Data Integration Sync</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- White-Label Partnership Box -->
+          <div class="bg-white p-6 border border-slate-200 rounded-sm">
+            <h3 class="text-sm font-bold text-[#1A1A1B] font-mono border-b pb-2 mb-4">White-Label Delivery</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              This migration was successfully delivered under a strict white-label partnership model. I acted as the lead architect representing the primary agency partner, interfacing seamlessly with internal corporate enterprise stakeholders.
+            </p>
+            <a href="/partnerships" class="mt-4 block text-center text-xs font-mono font-bold tracking-wider uppercase bg-[#1A1A1B] text-white hover:bg-[#E31B23] transition-colors py-3 rounded-sm">
+              Explore Partnership Models
+            </a>
+          </div>
+
+          <!-- Quick Navigation -->
+          <div class="bg-white p-6 border border-slate-200 rounded-sm">
+            <h4 class="text-xs font-mono uppercase tracking-widest text-slate-500 mb-3">Other Case Studies</h4>
+            <div class="space-y-2">
+              <a href="/case-studies/vmo2-revenue-engine" class="block text-sm font-bold text-[#1A1A1B] hover:text-[#E31B23]">
+                Virgin Media O2 Revenue Engine
+              </a>
+              <a href="/case-studies/spark-transformation" class="block text-sm font-bold text-[#1A1A1B] hover:text-[#E31B23] pt-2 border-t border-slate-100">
+                Spark Transformation
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Bottom CTA Banner -->
+    <section class="border-t-2 border-[#1A1A1B] bg-white py-16 text-center">
+      <div class="max-w-4xl mx-auto px-6">
+        <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1B]">Require Strategic Architecture or Platform Consolidation?</h2>
+        <p class="mt-4 text-slate-600 max-w-xl mx-auto text-sm md:text-base">
+          I provide Technical Design Documents (TDDs), migration oversight, and advanced martech architecture on an advisory or fractional basis.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="/contact" class="px-6 py-3 bg-[#E31B23] hover:bg-red-700 text-white font-mono font-bold text-xs uppercase tracking-wider rounded-sm transition-colors">
+            Request Architectural Review
+          </a>
+          <a href="/case-studies" class="px-6 py-3 border border-[#1A1A1B] text-[#1A1A1B] hover:bg-[#F4F7F6] font-mono font-bold text-xs uppercase tracking-wider rounded-sm transition-colors">
+            All Case Studies
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</BaseLayout>

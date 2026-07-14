@@ -1,113 +1,126 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Nav from '../components/Nav.astro';
-import Footer from '../components/Footer.astro';
-import ClientLogos from '../components/ClientLogos.astro';
-const metadata = {
-  title: "Architectural Case Studies | The Automation Specialist",
-  description: "Enterprise strategic blueprints and integration governance case studies. Proof of architectural excellence from Lee Gorse.",
-  keywords: "ABM Architecture, Marketing Technology Blueprints, Eloqua Consultant Case Study, Martech Governance"
-};
 ---
 
-<BaseLayout title={metadata.title} description={metadata.description} keywords={metadata.keywords}>
-  <Nav />
+<BaseLayout 
+  title="Enterprise Case Studies | High-Touch Solution Architecture | TAMS"
+  description="Explore technical blueprints and strategic outcomes delivered by Lee Gorse, featuring major migrations, stack consolidations, and revenue engines for enterprise clients."
+>
+  <div class="min-h-screen bg-[#F4F7F6] text-[#1A1A1B] font-sans antialiased relative overflow-hidden">
+    
+    <!-- Technical Blueprint Grid Background Overlay -->
+    <div class="absolute inset-0 pointer-events-none opacity-[0.03] bg-[linear-gradient(to_right,#1A1A1B_1px,transparent_1px),linear-gradient(to_bottom,#1A1A1B_1px,transparent_1px)] bg-[size:10px_10px]"></div>
 
-  <main class="bg-neutral-950 text-neutral-100 min-h-screen pt-24 pb-16">
-    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-8 border-b border-neutral-800">
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6">
-        Architectural <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300">Case Studies</span>
-      </h1>
-      <p class="text-lg text-neutral-300 max-w-3xl leading-relaxed font-light">
-        Proof of high-touch technology governance, strategic design blueprints, and clean integration loops designed for enterprise marketing environments. I don't configure platforms; I design the ecosystems that accelerate pipeline.
-      </p>
-    </section>
+    <!-- Page Header Block -->
+    <header class="relative border-b-2 border-[#1A1A1B] bg-white py-16 md:py-20">
+      <div class="max-w-6xl mx-auto px-6 text-center md:text-left">
+        <span class="text-xs font-mono uppercase tracking-widest text-[#E31B23] font-semibold">Architectural Proof Points</span>
+        <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-[#1A1A1B] mt-3">
+          Case Studies & System Blueprints
+        </h1>
+        <p class="mt-4 text-base md:text-lg text-slate-600 max-w-2xl leading-relaxed">
+          I don't configure platforms on the fly. I architect systems. These narratives outline the strategic design, technical blueprints, and governance structures I have deployed for tier-one brands.
+        </p>
+      </div>
+    </header>
 
-    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-
-        <article class="bg-neutral-900 border border-neutral-800 rounded-3xl overflow-hidden shadow-2xl flex flex-col group hover:border-emerald-500/40 transition-all duration-300">
-          <div class="p-8 flex-grow">
-            <div class="flex items-center justify-between gap-4 mb-4">
-              <span class="px-3 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-semibold rounded-full border border-emerald-500/20">
-                Enterprise ABM Loop
-              </span>
-              <span class="text-xs font-mono text-neutral-500">June 2026</span>
+    <!-- Case Studies Listing Section -->
+    <main class="max-w-6xl mx-auto px-6 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- CARD 1: NEW - HEALTHCARE MAP MIGRATION -->
+        <article class="bg-white border border-slate-200 rounded-sm hover:border-[#E31B23] transition-all flex flex-col justify-between shadow-sm hover:shadow">
+          <div class="p-6 md:p-8">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="text-[10px] font-mono bg-[#004D40] text-white px-2 py-0.5 rounded-sm">Eloqua / SFMC</span>
+              <span class="text-[10px] font-mono text-slate-400">July 2026</span>
             </div>
-            
-            <h2 class="text-2xl font-bold text-white group-hover:text-emerald-400 transition-colors duration-300 mb-3">
-              VMO2: Architecting the Enterprise Revenue Engine
-            </h2>
-            
-            <p class="text-neutral-400 text-sm font-light leading-relaxed mb-6">
-              How I unified Oracle Eloqua, D&B RevUp, and Salesforce CRM to deliver real-time Account-Level Recommendation alerts to enterprise sales owners, dropping data latency from 7 days down to under 15 minutes.
+            <h3 class="text-xl font-bold text-[#1A1A1B] hover:text-[#004D40] transition-colors leading-snug">
+              <a href="/case-studies/healthcare-map-migration">Enterprise MAP-to-MAP Migration & Data Architecture</a>
+            </h3>
+            <p class="mt-3 text-xs text-slate-500 font-mono">
+              CLIENT: Major US-based Healthcare Insurer (HK B2B Business Unit)
             </p>
-
-            <div class="grid grid-cols-2 gap-4 border-t border-neutral-800/80 pt-4 mb-2">
-              <div>
-                <span class="block text-neutral-500 text-xs uppercase font-semibold">Integrations</span>
-                <span class="text-white text-xs font-mono font-medium">Eloqua + RevUp + CRM</span>
-              </div>
-              <div>
-                <span class="block text-neutral-500 text-xs uppercase font-semibold">Primary Focus</span>
-                <span class="text-white text-xs font-mono font-medium">Zero-Latency Signal Loops</span>
-              </div>
-            </div>
+            <p class="mt-4 text-sm text-slate-600 leading-relaxed">
+              Consolidating duplicate tier-one marketing stacks (SFMC to Eloqua) and integrating AWS Data Lakes and CRM into a unified relational database layout.
+            </p>
           </div>
-          
-          <div class="px-8 pb-8 pt-2">
-            <a href="/case-studies/vmo2-revenue-engine" class="inline-flex items-center justify-center w-full sm:w-auto px-5 py-2.5 bg-neutral-800 hover:bg-emerald-500 text-white hover:text-neutral-950 text-sm font-bold rounded-lg transition-all duration-300 font-mono tracking-wide">
-              Read Blueprint
+          <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-mono font-bold uppercase tracking-wider text-[#004D40]">Strategic Architecture</span>
+            <a href="/case-studies/healthcare-map-migration" class="text-xs font-mono font-bold text-[#E31B23] hover:underline flex items-center gap-1">
+              View Blueprint →
             </a>
           </div>
         </article>
 
-        <article class="bg-neutral-900 border border-neutral-800 rounded-3xl overflow-hidden shadow-2xl flex flex-col group hover:border-emerald-500/40 transition-all duration-300">
-          <div class="p-8 flex-grow">
-            <div class="flex items-center justify-between gap-4 mb-4">
-              <span class="px-3 py-1 bg-teal-500/10 text-teal-400 text-xs font-semibold rounded-full border border-teal-500/20">
-                System Migration &amp; SLA Alignment
-              </span>
-              <span class="text-xs font-mono text-neutral-500">Historical</span>
+        <!-- CARD 2: VMO2 REVENUE ENGINE -->
+        <article class="bg-white border border-slate-200 rounded-sm hover:border-[#E31B23] transition-all flex flex-col justify-between shadow-sm hover:shadow">
+          <div class="p-6 md:p-8">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="text-[10px] font-mono bg-[#004D40] text-white px-2 py-0.5 rounded-sm">Martech Scale</span>
+              <span class="text-[10px] font-mono text-slate-400">Case Study</span>
             </div>
-            
-            <h2 class="text-2xl font-bold text-white group-hover:text-teal-400 transition-colors duration-300 mb-3">
-              Spark Transformation: Legacy to Cloud Orchestration
-            </h2>
-            
-            <p class="text-neutral-400 text-sm font-light leading-relaxed mb-6">
-              A comprehensive blueprint mapping legacy database pipelines into a streamlined Eloqua/PEGA deployment. Standardized global lead hand-off rules and established operational SLAs for cross-border markets.
+            <h3 class="text-xl font-bold text-[#1A1A1B] hover:text-[#004D40] transition-colors leading-snug">
+              <a href="/case-studies/vmo2-revenue-engine">Virgin Media O2 Revenue Engine Transformation</a>
+            </h3>
+            <p class="mt-3 text-xs text-slate-500 font-mono">
+              CLIENT: Virgin Media O2
             </p>
-
-            <div class="grid grid-cols-2 gap-4 border-t border-neutral-800/80 pt-4 mb-2">
-              <div>
-                <span class="block text-neutral-500 text-xs uppercase font-semibold">Integrations</span>
-                <span class="text-white text-xs font-mono font-medium">Eloqua/PEGA Migration</span>
-              </div>
-              <div>
-                <span class="block text-neutral-500 text-xs uppercase font-semibold">Primary Focus</span>
-                <span class="text-white text-xs font-mono font-medium">SLA Governance Blueprints</span>
-              </div>
-            </div>
+            <p class="mt-4 text-sm text-slate-600 leading-relaxed">
+              Designing scalable lead-to-opportunity routing engines, technical SLAs, and CRM syncing governance to eliminate marketing leakage across complex commercial entities.
+            </p>
           </div>
-          
-          <div class="px-8 pb-8 pt-2">
-            <a href="/case-studies/spark-transformation" class="inline-flex items-center justify-center w-full sm:w-auto px-5 py-2.5 bg-neutral-800 hover:bg-emerald-500 text-white hover:text-neutral-950 text-sm font-bold rounded-lg transition-all duration-300 font-mono tracking-wide">
-              Read Blueprint
+          <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-mono font-bold uppercase tracking-wider text-[#004D40]">Revenue Engine</span>
+            <a href="/case-studies/vmo2-revenue-engine" class="text-xs font-mono font-bold text-[#E31B23] hover:underline flex items-center gap-1">
+              View Blueprint →
+            </a>
+          </div>
+        </article>
+
+        <!-- CARD 3: SPARK TRANSFORMATION -->
+        <article class="bg-white border border-slate-200 rounded-sm hover:border-[#E31B23] transition-all flex flex-col justify-between shadow-sm hover:shadow">
+          <div class="p-6 md:p-8">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="text-[10px] font-mono bg-[#004D40] text-white px-2 py-0.5 rounded-sm">Platform Revamp</span>
+              <span class="text-[10px] font-mono text-slate-400">Case Study</span>
+            </div>
+            <h3 class="text-xl font-bold text-[#1A1A1B] hover:text-[#004D40] transition-colors leading-snug">
+              <a href="/case-studies/spark-transformation">Platform Optimisation & Operational Redesign</a>
+            </h3>
+            <p class="mt-3 text-xs text-slate-500 font-mono">
+              CLIENT: Spark Enterprise
+            </p>
+            <p class="mt-4 text-sm text-slate-600 leading-relaxed">
+              Rescuing under-utilised automation investments, aligning core data integrations, and delivering a comprehensive technical operating model for regional B2B entities.
+            </p>
+          </div>
+          <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-mono font-bold uppercase tracking-wider text-[#004D40]">Governance Blueprint</span>
+            <a href="/case-studies/spark-transformation" class="text-xs font-mono font-bold text-[#E31B23] hover:underline flex items-center gap-1">
+              View Blueprint →
             </a>
           </div>
         </article>
 
       </div>
-    </section>
+    </main>
 
-    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-neutral-800/80 pt-16">
-      <div class="text-center mb-8">
-        <p class="text-xs uppercase tracking-widest font-mono text-neutral-500 font-semibold">Trusted By International Enterprise Leaders</p>
+    <!-- Bottom Advisory Panel -->
+    <section class="bg-white border-t-2 border-[#1A1A1B] py-16">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h3 class="text-xs font-mono uppercase tracking-widest text-[#E31B23] font-bold">Engagement Options</h3>
+        <h2 class="text-2xl md:text-3xl font-bold mt-2 text-[#1A1A1B]">How I Deliver Value to Enterprise Teams</h2>
+        <p class="mt-4 text-slate-600 max-w-xl mx-auto text-sm md:text-base leading-relaxed">
+          I operate as a pure white-label technical architect for premier agencies, or a high-touch trusted advisor for enterprise martech governance.
+        </p>
+        <div class="mt-8 flex justify-center">
+          <a href="/partnerships" class="px-8 py-3 bg-[#004D40] hover:bg-[#003c32] text-white font-mono text-xs font-bold uppercase tracking-wider rounded-sm transition-all shadow-md">
+            Review Strategic Partnership Model
+          </a>
+        </div>
       </div>
-      <ClientLogos />
     </section>
-  </main>
 
-  <Footer />
+  </div>
 </BaseLayout>
